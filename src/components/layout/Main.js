@@ -4,13 +4,14 @@ import Nav from "./Nav";
 import Popup from "./Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
 import Context from "../../context";
+import TextArea from "../common/TextArea/Index";
 
 
 function Main() {
 
     return <>
         <Context>
-            <Header />
+            {/* <Header /> */}
             <Routes>
 
                 {/* sign */}
@@ -21,6 +22,13 @@ function Main() {
 
                 {/* student */}
                 <Route path="/student" element={<><h1> protected - route - student  </h1><Outlet /></>}>
+                
+                    <Route path="read-train">
+                        <Route index element={<>focus-train</>} />
+                        <Route path="exercise" element={<>exercise</>} />
+                        <Route path="exercise" element={<>exercise</>} />
+                        <Route path="exercise" element={<>exercise</>} />
+                    </Route>
                     <Route path="focus-train">
                         <Route index element={<>focus-train</>} />
                         <Route path="exercise" element={<>exercise</>} />
