@@ -1,7 +1,7 @@
-
+import QuestionBoard from '../common/QuestionBoard'
 function Test() {
     return <>
-        xyz
+        <QuestionBoard />
     </>
 }
 
