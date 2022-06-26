@@ -1,9 +1,9 @@
-import Test from "../test/Test";
-import Header from "./Header";
-import Nav from "./Nav";
-import Popup from "./Popup";
+import Test from "../../test/Test";
+import Header from "../header/Header";
+import Nav from "../nav/Nav";
+import Popup from "../popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import Context from "../../context";
+import Context from "../../../context";
 
 
 function Main() {
