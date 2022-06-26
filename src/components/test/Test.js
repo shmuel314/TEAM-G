@@ -1,9 +1,10 @@
-import { NavBar } from "../../common/NavBar";
+
+import TeamF from "../common/TeamF";
 
 function Test() {
   return (
     <>
-      <NavBar />
+      <TeamF />
     </>
   );
 }
