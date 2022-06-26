@@ -1,7 +1,7 @@
 function Test() {
   return (
     <>
-      <div>nadav, milka</div>
+      <div>nadav, batya, milka</div>
     </>
   );
 }
