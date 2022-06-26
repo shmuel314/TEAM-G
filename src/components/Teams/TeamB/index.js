@@ -1,8 +1,8 @@
 
-function TeamA() {
+function TeamB() {
     return (
         <div>TeamA</div>
     )
 }
 
-export default TeamA
+export default TeamB
