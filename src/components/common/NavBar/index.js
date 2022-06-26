@@ -1,6 +1,6 @@
 import "./style.css";
 import DashButt from "../DashButt";
-import NavHead from "../NavHead";
+import { NavHead } from "../NavHead";
 
 export const NavBar = () => {
   return (
