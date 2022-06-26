@@ -1,7 +1,7 @@
 import Test from "../test/Test";
 import Header from "./Header";
 import Nav from "./Nav";
-import Popup from "./Popup";
+import Popup from "./Popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
 import Context from "../../context";
 
