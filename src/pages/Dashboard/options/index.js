@@ -1,4 +1,4 @@
-import FunctionBtn from "../FunctionBtn";
+import FunctionBtn from "../functionBtn";
 
 export default function Options() {
   return (
