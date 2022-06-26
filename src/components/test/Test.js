@@ -1,9 +1,10 @@
 
-import SubmitBtn from '../common/SubmitBtn'
+import { navBackButt as NavBackButt } from "../common/navBackButt";
 
-
-function Test(){
-    return <>
+function Test() {
+  return (
+    <>
+      <NavBackButt />
     </>
   );
 }
