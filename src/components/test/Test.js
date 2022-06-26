@@ -1,8 +1,9 @@
 
-function Test(){
-    return <>
-    
-    </>
+function Test() {
+    return (
+        <>
+        </>
+    )
 }
 
 
