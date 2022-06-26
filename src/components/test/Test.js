@@ -1,9 +1,13 @@
-import { NavBar } from "../../common/NavBar";
+// import { NavBar } from "../../common/NavBar";
+import CancelBtn from "../common/cancelBtn";
+import TrueBtn from "../common/trueBtn";
 
 function Test() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
+      <CancelBtn />
+      <TrueBtn />
     </>
   );
 }
