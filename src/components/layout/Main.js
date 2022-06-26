@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Popup from "./Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
 import Context from "../../context";
-
+import TeacherSignUpCard from "../../pages/SignUp/ConnectTeacher/TeacherSignUpCard";
 
 function Main() {
 
@@ -39,7 +39,7 @@ function Main() {
                     <Route path="add-remove-teacher" element={<>add-remove-teacher</>} />
                 </Route>
 
-                <Route path='/test' element={<Test />} />
+                <Route path='/test' element={<TeacherSignUpCard />} />
             </Routes>
             <Nav />
             <Popup />
