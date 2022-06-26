@@ -1,7 +1,7 @@
-
+import SquareButton from "../../common"
 function Test(){
     return <>
-    <div>nadav, batya</div>
+   <SquareButton></SquareButton>
     </>
 }
 
