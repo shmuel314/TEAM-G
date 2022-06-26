@@ -1,9 +1,5 @@
-
-function Test(){
-    return <>
-    
-    </>
+function Test() {
+  return <>milka</>;
 }
 
-
-export default Test
+export default Test;
