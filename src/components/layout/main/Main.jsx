@@ -3,7 +3,7 @@ import Header from "../header/Header";
 import Nav from "../nav/Nav";
 import Popup from "../popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import TextArea from "../common/TextArea/Index";
+import TextArea from "../../common/TextArea/Index";
 import Context from "../../../context";
 
 
@@ -11,7 +11,7 @@ function Main() {
 
     return <>
         <Context>
-            {/* <Header /> */}
+            <Header />
             <Routes>
 
                 {/* sign */}

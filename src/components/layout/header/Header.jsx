@@ -16,7 +16,8 @@ export default function Header(props) {
          </div>
 
          <div>
-
+            <img src={nav} alt="User Name" />
+            {/* <img src={props.userLoginInfo.userImage} alt={props.userLoginInfo.userName} /> */}
          </div>
       </div>
    )
