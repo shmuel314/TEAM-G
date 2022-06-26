@@ -1,9 +1,7 @@
+import Results from "../../pages/TrainFocus/TrainFocusResults";
 
-function Test(){
-    return <>
-    
-    </>
+function Test() {
+  return <></>;
 }
 
-
-export default Test
+export default Test;

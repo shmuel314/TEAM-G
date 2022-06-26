@@ -1,0 +1,73 @@
+@media screen and (max-width: 600px) {
+  .image {
+    position: absolute;
+    width: 299.82px;
+    height: 316px;
+    left: 20%;
+    top: 15%;
+  }
+  .rectangle {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 382px;
+    height: 135px;
+    left: 16px;
+    top: 70%;
+
+    background: #feefec;
+    border: 1.5px solid #252525;
+    border-radius: 20px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    position: absolute;
+    width: 167px;
+    height: 93px;
+    left: 124px;
+    top: 15%;
+  }
+  .text {
+    width: 167px;
+    height: 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 55px;
+    text-align: center;
+    color: #252525;
+  }
+  .btn {
+    margin-top: 5px;
+    height: 30px;
+    width: 50%;
+    position: fixed;
+    bottom: 0%;
+    left: 30%;
+    border-radius: 40%;
+    background-color: orange;
+  }
+  .rectangle1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 382px;
+    height: 135px;
+    left: 19.08px;
+    top: 70%;
+
+    background: #7d56a5;
+    border: 1.5px solid #252525;
+    border-radius: 20px;
+    transform: rotate(2.46deg);
+  }
+  #mobile {
+  }
+}
