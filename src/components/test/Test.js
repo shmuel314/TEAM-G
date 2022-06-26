@@ -1,7 +1,7 @@
-
-function Test(){
+import QuestionBoard from '../common/QuestionBoard'
+function Test() {
     return <>
-    
+        <QuestionBoard />
     </>
 }
 
