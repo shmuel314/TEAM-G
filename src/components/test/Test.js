@@ -1,9 +1,9 @@
-import { NavBar } from "../../common/NavBar";
 
-function Test() {
-  return (
-    <>
-      <NavBar />
+import SubmitBtn from '../common/SubmitBtn'
+
+
+function Test(){
+    return <>
     </>
   );
 }
