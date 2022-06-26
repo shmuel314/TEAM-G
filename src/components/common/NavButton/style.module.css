@@ -1,0 +1,6 @@
+.icon{
+    flex-direction: row;
+}
+.txt{
+    display: inline-block;
+}
