@@ -1,9 +1,9 @@
-import { NavBar } from "../../common/NavBar";
+import { navBackButt as NavBackButt } from "../common/navBackButt";
 
 function Test() {
   return (
     <>
-      <NavBar />
+      <NavBackButt />
     </>
   );
 }
