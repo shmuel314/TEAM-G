@@ -1,55 +1,44 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React from 'react'
+import { useState, useEffect } from 'react';
 
-function PushUpTimer() {
-  //send to header pushup counter
-  //timer
-  //continue button
 
-  return <div>
-    <Timer/>
-  </div>;
+
+export default function PushUpTimer(props) {
+
+    const [minutes, setMinutes] = useState(3);
+    const [seconds, setSeconds] = useState(0);
+    useEffect(() => {
+        let myInterval = setInterval(() => {
+            if (seconds > 0) {
+                setSeconds(seconds - 1);
+            }
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    clearInterval(myInterval)
+                } else {
+                    setMinutes(minutes - 1);
+                    setSeconds(59);
+                }
+            }
+        }, 1000)
+        return () => {
+            clearInterval(myInterval);
+        };
+    });
+
+    return (
+        <div>
+            {minutes === 0 && seconds === 0
+                ? null
+                : <h1> {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
+            }
+        </div>
+    )
 }
 
-function Timer(props) {
-  //pause button
+function Music() {
 
-//   const { initialMinute = 0, initialSeconds = 0 } = props;
-  const [minutes, setMinutes] = useState(3);
-  const [seconds, setSeconds] = useState(0);
 
-  useEffect(() => {
-    let myInterval = setInterval(() => {
-      if (seconds > 0) {
-        setSeconds(seconds - 1);
-      }
-      if (seconds === 0) {
-        if (minutes === 0) {
-          clearInterval(myInterval);
-        } else {
-          setMinutes(minutes - 1);
-          setSeconds(59);
-        }
-      }
-    }, 1000);
-    return () => {
-      clearInterval(myInterval);
-    };
-  });
-
-  return (
-    <div>
-      {minutes === 0 && seconds === 0 ? null : (
-        <h1>
-          {" "}
-          {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-        </h1>
-      )}
-    </div>
-  );
 }
 
-function Music() {}
 
-
-export default PushUpTimer; 

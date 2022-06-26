@@ -9,6 +9,7 @@ function Test() {
     <Questions/>
         <Popup />
       <PushupInstructions />
+        <Questions />
     </>
 }
 
