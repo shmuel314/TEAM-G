@@ -1,10 +1,11 @@
-import Options from "../../pages/Dashboard/Options"
+import { NavBar } from "../../common/NavBar";
 
-function Test(){
-    return <>
-    <Options/>
+function Test() {
+  return (
+    <>
+      <NavBar />
     </>
+  );
 }
 
-
-export default Test
+export default Test;
