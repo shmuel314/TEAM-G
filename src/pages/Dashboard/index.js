@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 import Header from '../../components/layout/Header'
-import Options from './Options'
+import Options from './options'
 
 // Creator : Team F - Asael
 function Dashboard(){
