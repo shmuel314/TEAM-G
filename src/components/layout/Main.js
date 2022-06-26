@@ -2,6 +2,7 @@ import Test from "../test/Test";
 import Header from "./Header";
 import Nav from "./Nav";
 import Popup from "./Popup";
+import {SignIn} from '../../pages/SignUp/Sign-in'
 import { Outlet, Route, Routes } from "react-router-dom"
 import Context from "../../context";
 
@@ -10,12 +11,12 @@ function Main() {
 
     return <>
         <Context>
-            <Header />
+            {/* <Header /> */}
             <Routes>
 
                 {/* sign */}
                 <Route path="sign-up" >
-                    <Route index element={<>sign up</>} />
+                    <Route index element={< Test />} />
                     <Route path="connect-teacher" element={<>connect teacher</>} />
                 </Route>
 
@@ -39,7 +40,7 @@ function Main() {
                     <Route path="add-remove-teacher" element={<>add-remove-teacher</>} />
                 </Route>
 
-                <Route path='/test' element={<Test />} />
+                <Route path='/test' element={<SignIn />} />
             </Routes>
             <Nav />
             <Popup />
