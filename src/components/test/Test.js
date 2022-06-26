@@ -1,7 +1,10 @@
+import Clock from "../../Common/Clock/index";
 function Test() {
   return (
     <>
-      <div>nadav, batya, milka</div>
+      <div>
+        <Clock></Clock>
+      </div>
     </>
   );
 }
