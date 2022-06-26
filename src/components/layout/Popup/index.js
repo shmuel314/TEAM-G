@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Popup.css';
+import './style.css';
 
 export default function Popup() {
 
