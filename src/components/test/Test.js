@@ -8,8 +8,8 @@ function Test() {
     return <>
     <Questions/>
         <Popup />
+      <PushupInstructions />
     </>
 }
 
-
-export default Test
+export default Test;
