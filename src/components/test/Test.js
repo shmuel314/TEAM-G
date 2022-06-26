@@ -1,8 +1,8 @@
-import Options from "../../pages/Dashboard/Options"
+import SubmitBtn from '../common/SubmitBtn'
+
 
 function Test(){
     return <>
-    <Options/>
     </>
 }
 
