@@ -40,6 +40,9 @@ function Main() {
                 </Route>
 
                 <Route path='/test' element={<Test />} />
+
+                {/* team A*/}
+                <Route path="/teamA" element={<><h1> css common of team A </h1></>}/>
             </Routes>
             <Nav />
             <Popup />
