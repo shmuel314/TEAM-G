@@ -2,9 +2,11 @@ import styles from './style.module.css'
 
 // Creator : Team A - Shahar
 function Temp(){
-    return <>
+    return <div className='graf'>
+
+    </div>
     
-    </>
+   
 }
 
 
