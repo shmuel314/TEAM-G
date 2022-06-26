@@ -6,6 +6,8 @@ import { Outlet, Route, Routes } from "react-router-dom"
 import Context from "../../context";
 
 
+
+
 function Main() {
 
     return <>
@@ -39,7 +41,7 @@ function Main() {
                     <Route path="add-remove-teacher" element={<>add-remove-teacher</>} />
                 </Route>
 
-                <Route path='/test' element={<Test />} />
+                <Route path='/test' element={<Test/>} />
             </Routes>
             <Nav />
             <Popup />
