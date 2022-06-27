@@ -1,9 +1,10 @@
-import { NavBar } from "../common/NavBar";
+
+import SubmitBtn from "../common/SubmitBtn";
 
 function Test() {
   return (
     <>
-      <TeamF />
+      
     </>
   );
 }

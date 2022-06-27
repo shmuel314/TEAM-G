@@ -1,10 +1,10 @@
-import "./style.css"
-import { BiArrowBack } from 'react-icons/bi';
+import "./style.css";
+import { BiArrowBack } from "react-icons/bi";
 
-export const navBackButt = () => {
+export const NavBackButt = () => {
   return (
     <div type="button" className="ArrowButt">
-    <BiArrowBack />
-  </div>
-  )
-}
+      <BiArrowBack />
+    </div>
+  );
+};

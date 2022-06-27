@@ -1,16 +1,11 @@
 import "./style.css";
-
-export default function SubmitBtn() {
+import {Link} from "react-router-dom"
+export default function SubmitBtn(props) {
   return (
     <div className="submit">
-      <div type="button" className="word">
-<<<<<<< HEAD
-        
-        submit
-=======
-        Submit
->>>>>>> acb85112ee1cd6fedff7f73084d2181899fbf66e
-      </div>
+     <Link to={props.path} > <div type="button">
+        <div className="word">{props.name}</div>
+      </div></Link>
     </div>
   );
 }
