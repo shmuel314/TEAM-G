@@ -1,7 +1,11 @@
-import SubmitBtn from "../common/SubmitBtn";
+import { NavBar } from "../Common/Nav/index";
 
 function Test() {
-  return <></>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
 
 export default Test;

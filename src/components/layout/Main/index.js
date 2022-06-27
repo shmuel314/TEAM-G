@@ -1,9 +1,10 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-import Popup from "../Popup";
+import Popup from "../Popup/index";
 import { Outlet, Route, Routes } from "react-router-dom";
-import TeamF from "../../teams/TeamF";
+import TextArea from "../../Common/TextArea/Index";
+// import Context from "../../../context";
 
 function Main() {
   return (
@@ -65,7 +66,7 @@ function Main() {
       </Routes>
 
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }
