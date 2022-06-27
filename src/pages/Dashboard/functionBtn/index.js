@@ -1,25 +1,32 @@
-import { useEffect } from "react";
-import {FiLock} from "react-icons/bs"
-export default function FunctionBtn(props){
+export default function FunctionBtn(props) {
+  switch (props.name) {
+    case "Train Reading":
+      <button className="word">
+        <div className="iconReading">{props.icon}</div>
+        {props.name}
+      </button>;
+      break;
+    case "Train Focus":
+      <button className="word">
+        <div className="iconFocus">{props.icon}</div>
+        {props.name}
+      </button>;
+      break;
+    case "Weekly Assessment":
+      <button className="word">
+        <div className="lockIcon">{props.lock}</div>
+        <div className="iconWeekly">{props.icon}</div>
+        {props.name}
+        <div className="word">`access in 2 days`</div>
+      </button>;
+      break;
+    case "Freestyle":
+      <button className="word">
+        <div className="iconFfreestyle">{props.icon}</div>
+        {props.name}
+      </button>;
+      break;
+  }
 
-switch(props.name){
-  case "Train Reading":
-    {<button type="button" className="word">
-      
-      {props.name}
-    {props.name === "Weekly Assessment" && <div className="word">`access in {countDays} days`</div>}
-    </button>}
-  case "Train Focus":
-  case "Weekly Assessment":
-  case "Freestyle":
-}
-
-    return <> 
-    <button type="button" className="word">{props.name}
-    {props.name === "Weekly Assessment" && <div className="word">`access in {countDays} days`</div>}
-    </button>
-    </>
-  ;
-
-  function countDays(props){}
+  function countDays(props) {}
 }

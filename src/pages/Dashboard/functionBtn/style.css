@@ -14,3 +14,46 @@
   order: 1;
   flex-grow: 0;
 }
+.iconReading {
+  position: absolute;
+  left: 0%;
+  right: -0.03%;
+  top: 0%;
+  bottom: -0.04%;
+  background: #7d56a5;
+}
+.iconFocus {
+  position: absolute;
+  left: 35.28%;
+  right: 35.3%;
+  top: 33.26%;
+  bottom: 33.26%;
+  background: #7d56a5;
+}
+.lockIcon {
+  box-sizing: border-box;
+  position: absolute;
+  width: 183.5px;
+  height: 100px;
+  left: 14px;
+  top: 622px;
+  background: #ffffff;
+  border: 1.5px solid #252525;
+  border-radius: 20px;
+}
+.iconWeekly {
+  position: absolute;
+  left: -0.03%;
+  right: 0.01%;
+  top: 0%;
+  bottom: -0.03%;
+  background: #7d56a5;
+}
+.iconFfreestyle {
+  position: absolute;
+  left: 31.25%;
+  right: 31.25%;
+  top: 0%;
+  bottom: 60.52%;
+  background: #7d56a5;
+}
