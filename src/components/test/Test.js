@@ -1,8 +1,10 @@
+import  StartComponent  from "../../pages/TrainFocus/InstructionFocus";
 
 function Test(){
-    return <>
-    
-    </>
+    return (
+    <div>
+   <StartComponent />
+    </div>)
 }
 
 
