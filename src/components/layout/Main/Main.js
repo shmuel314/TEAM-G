@@ -1,10 +1,10 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-import Popup from "../popup/Popup";
+// import Popup from "../popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import TextArea from "../common/TextArea/Index";
-import Context from "../../../context";
+// import TextArea from "../common/TextArea/Index";
+// import Context from "../../../context";
 
 
 function Main() {
@@ -70,7 +70,7 @@ function Main() {
       </Routes>
 
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }
