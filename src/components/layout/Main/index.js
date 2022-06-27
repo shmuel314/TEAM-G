@@ -1,14 +1,16 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-// import Popup from "../popup/Popup";
-// import { Outlet, Route, Routes } from "react-router-dom"
+// import Popup from "../Popup/Popup"
+import {  Route, Routes } from "react-router-dom"
+import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
+import StartFocus from "../../../pages/TrainFocus/FocusTrainStart/StartFocus";
 //  import Popup from "./popup/Popup";
-import { Outlet, Route, Routes } from "react-router-dom";
+// import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
@@ -17,7 +19,7 @@ function Main() {
     <>
       <Header />
 
-      {/* content */}
+      content
       <Routes>
         {/* Team A */}
         <Route path="teams-path">
@@ -59,8 +61,8 @@ function Main() {
         <Route path="/train-focus">
           <Route index element={<>team's components</>} />
           <Route path="exercise" element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
+          <Route path="StartFocus" element={<StartFocus/>} />
+          <Route path="result" element={<Results/>} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 

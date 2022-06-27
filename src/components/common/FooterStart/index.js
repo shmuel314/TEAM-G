@@ -12,13 +12,13 @@ import { Link } from "react-router-dom";
 
 function FooterStart(props) {
   return (
-    <div className="bottomStart">
+    <div className="myBottomStart">
       <div className="outBtn">
       <Link to={props.route}>  <button
-          className="startBtn"
+          className="startBtnFocous"
           onClick={props.startFunction}
         >
-          <div className="play"></div>
+          <div className="playTriangle"></div>
         </button></Link>
       </div>
       <div className="footer-start-box">

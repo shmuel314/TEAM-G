@@ -23,7 +23,7 @@ function Results(props) {
   const updateDB = () => {};
   return (
     <>
-      <img className="train-focus-result-image" src={image} alt="img"></img>
+      <img className="image" src={image} alt="img"></img>
       <div className="rectangle1">
         <div className="image2">
           <img src={image2} height="25%"></img>

@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-  .train-focus-result-image {
+  .image {
     position: absolute;
     width: 70%;
     height: 50%;
@@ -44,7 +44,7 @@
     text-align: center;
     color: #252525;
   }
-  .train-focus-result-btn {
+  .btn {
     margin-top: 5px;
     height: 30px;
     width: 50%;
