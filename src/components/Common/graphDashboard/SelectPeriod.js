@@ -3,16 +3,15 @@ import React from 'react'
 function SelectPeriod(props){
 
   function detectChange(v) {
-      console.log(v.target.value) 
-      // props.isPeriod[1](selectPeriod.value)
-
+    const val = v.target.value;
+    props.updatePeriod(val)
   }
   return <>
   <select name="readtime" id="readtime" onChange={(v)=>detectChange(v)}>
-  <option value="Today"> today </option>
-  <option selected value="last week"> last week </option>
-  <option value="2 weeks"> 2 weeks </option>
-  <option value= "month"> month </option>
+  <option value="today"> Today </option>
+  <option selected value="lastWeek"> Last week </option>
+  <option value="twoWeeks"> 2 weeks </option>
+  <option value="month"> Month </option>
   </select> 
  
   </>

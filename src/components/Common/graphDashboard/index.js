@@ -6,7 +6,7 @@ import "./Style.css";
 import Tab from "./Tab";
 
 export default function GraphContainer() {
-  const [period, setPeriod] = useState("last week");
+  const [period, setPeriod] = useState(fakeData.lastWeek);
   const [dataSrc, setDataSrc] = useState(fakeData.dataSrcInit);
   const [selectedTab, setSelectedTab] = useState("Assesments");
   const tabs = [
@@ -24,6 +24,7 @@ export default function GraphContainer() {
     },
     
   ];
+ 
   return (
     <div className="DashGraph">
       <div className="Tabs">
@@ -42,10 +43,12 @@ export default function GraphContainer() {
         })}
       </div>
       <div className="SelectBtn">
-        <SelectPeriod isPeriod={[period, setPeriod]} />
+        <SelectPeriod updatePeriod={(peri) => {
+          setPeriod(fakeData[peri]);
+        }} />
       </div>
       <div className="Graph">
-        <Graph d={dataSrc} />
+        <Graph d={dataSrc} labs={period}/>
       </div>
     </div>
   );

@@ -32,9 +32,7 @@ export default function Graph(props){
       },
     };
     
-
-     
-    const labels = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']; // get the data as props - props.xAxis
+    const labels = props.labs; // get the data as props - props.xAxis
     const data = {
       labels,
       datasets: [
@@ -42,8 +40,9 @@ export default function Graph(props){
             label: "",
             data: props.d.data,
             borderColor: 'blue',
-            backgroundColor: 'yellow',
-          }
+            backgroundColor: 'yellow'
+          },
+          
         ],
     };
     
