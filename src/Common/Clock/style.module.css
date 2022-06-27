@@ -4,13 +4,17 @@ h1 {
   margin-bottom: 40px;
 }
 
-.timer-wrapper {
-  display: flex;
-  justify-content: center;
-  border: 1.5px;
-  border-color: black;
-  stroke: solid black;
-  text-align: center;
+.timer_wrapper {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 262px;
+  height: 262px;
+  left: 76px;
+  top: 256.62px;
+
+  background: #feefec;
+  border: 1.5px solid #000000;
 }
 
 .timer {
@@ -25,12 +29,23 @@ h1 {
 }
 
 .value {
-  font-family: Poppins;
-  font-size: 24px;
-  /* Line height: 18.5px; */
+  /* position: absolute; */
+  /* width: 63px; */
+  /* height: 19px; */
+  /* left: 176px;
+  top: 378px; */
+
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 700;
-  text-align: Center;
-  vertical-align: Top;
+  font-size: 24px;
+  line-height: 18px;
+  /* identical to box height, or 77% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #252525;
 }
 
 .info {
@@ -38,4 +53,24 @@ h1 {
   margin: 40px auto 0;
   text-align: center;
   font-size: 16px;
+}
+
+.playPause {
+  /* box-sizing: border-box; */
+
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  left: 70px;
+  top: 140px;
+}
+
+.playPauseSign {
+  /* /* position: relative; */
+  /* width: 14.12px; */
+  /* height: 16.47px; */
+  /* left: 199.94px;
+  top: 447.38px; */
+
+  /* background: #252525; */
 }
