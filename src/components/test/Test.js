@@ -1,10 +1,7 @@
-
 function Test() {
-    return (
-        <>
-        </>
-    )
+    return <>
+       
+    </>
 }
 
-
-export default Test
+export default Test;
