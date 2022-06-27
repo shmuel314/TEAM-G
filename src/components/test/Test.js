@@ -3,7 +3,7 @@ import { NavBar } from "../common/NavBar";
 function Test() {
   return (
     <>
-      <TeamF />
+      <NavBar />
     </>
   );
 }
