@@ -5,7 +5,7 @@ export default function SquareButton(props) {
   // TO DO : get props from DB of person number LPM
   return (
     <>
-      <button className={styles.squareButton}>{props.children}</button>
+      <button className={styles.squareButton}>{props.children} </button>
     </>
   );
 }

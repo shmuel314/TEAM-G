@@ -29,6 +29,11 @@ h1 {
 }
 
 .value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   /* position: absolute; */
   /* width: 63px; */
   /* height: 19px; */
@@ -54,15 +59,46 @@ h1 {
   text-align: center;
   font-size: 16px;
 }
-
+.squarebutton {
+  top: 50%;
+}
 .playPause {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 
   position: fixed;
   width: 40px;
   height: 40px;
-  left: 70px;
-  top: 140px;
+  left: 7%;
+  top: 37%;
+}
+
+.plusMinus {
+  box-sizing: border-box;
+
+  position: relative;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  left: 357px;
+  top: 430px;
+
+  background: #feefec;
+  border: 1.5px solid #252525;
+  /* 1 */
+
+  box-shadow: 2px 2px 0px #d35400;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 16.32px;
+  line-height: 25px;
+  /* or 179% */
+
+  /* display: flex;
+  align-items: center; */
+
+  color: #000000;
 }
 
 .playPauseSign {
@@ -73,4 +109,12 @@ h1 {
   top: 447.38px; */
 
   /* background: #252525; */
+}
+
+.plusMinusSign {
+  width: 16.32px;
+  height: 16.32px;
+  color: #5c2680;
+  left: 50%;
+  /* text-align: center; */
 }

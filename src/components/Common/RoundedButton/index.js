@@ -10,10 +10,12 @@ export default function RoundedButton(props) {
         <button
           className={styles.RoundedButton}
           onClick={() => {
+            console.log("isplay");
             setIsPlay(!isplay);
           }}
         >
-          <b>||</b>
+          {" "}
+          ||{" "}
         </button>
       ) : (
         <button
