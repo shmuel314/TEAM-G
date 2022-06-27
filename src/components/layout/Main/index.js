@@ -1,7 +1,7 @@
 import Test from "../../test/Test";
 import Header from "../Header";
 import Nav from "../Nav";
-import Popup from "../../layout/Popup";
+import Popup from "../Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 
@@ -16,7 +16,7 @@ import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult"
 function Main() {
   return (
     <>
-      <Header />
+      <Header/>
 
       {/* content */}
       <Routes>

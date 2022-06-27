@@ -3,6 +3,7 @@ import './style.css';
 import Headphone from './Level_Headphone.png'
 import FooterStart from '../../../../components/common/FooterStart'
 
+
 const index = () => {
 const BookName = "Harry Potter" // i need to receive this info fromm shachar
 const title = 'Start Now'

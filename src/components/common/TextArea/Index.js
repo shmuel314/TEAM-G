@@ -7,7 +7,7 @@ const TextArea = (props) => {
     return (
         <div className='ta_box'>
             <div className="form-group">
-                <label>first name{props.children}</label>
+                <label>{props.children}</label>
                 <input type="text" className="form-control" />
             </div>
         </div>
