@@ -15,7 +15,6 @@ const dragStart = (e) => {
   };
   const drag = (e) => {
     setPosX(e.clientX-49);
-    
   };
 
   const dragEnd = (e) => {

@@ -1,16 +1,16 @@
 // import Test from "../test/Test";
 import Header from "./Header";
 import Nav from "./Nav";
-import Popup from "./Popup";
+// import Popup from "./Popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import Context from "../../context";
+// import Context from "../../context";
 import CalibrateCam from "../../pages/TrainFocus/CalibrateCam";
 
 
 function Main() {
 
     return <>
-        <Context>
+        {/* <Context> */}
             <Header />
             <Routes>
 
@@ -43,8 +43,8 @@ function Main() {
                 <Route path='/test' element={<CalibrateCam />} />
             </Routes>
             <Nav />
-            <Popup />
-        </Context>
+            {/* <Popup /> */}
+        {/* </Context> */}
 
     </>
 }
