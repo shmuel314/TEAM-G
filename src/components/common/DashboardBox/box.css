@@ -1,23 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns:10px 400px;
+    grid-template-rows: repeat(2,60px);
+    justify-items: center;
+    
+    padding: 10px;
+    width: 1000px;
+    row-gap: 100px;
+    column-gap: 10px;
+    
+  }
 .box{
     align-items: center;
+    padding: 20px;
     text-align: center;
     box-sizing: border-box;
     position: absolute;
     width: 183.5px;
     height: 100px;
-    left: 16px;
-    top: 689.3px;
+    /* left: 16px;
+    top: 689.3px; */
+    text-align: center;
     display:block;
-    
     border: 1.5px solid #252525;
     border-radius: 20px;
-    z-index: -9;
     
 }
 .boxbehind{
 
 
-
+    z-index: -9;
 background: #7D56A5;
     border: 1.5px solid #252525;
     border-radius: 20px;
@@ -30,6 +42,9 @@ transform: rotate(4.02deg);
 }
 .box1{
     background: #F39C12;
+}
+.box2{
+    background: #FFFFFF;
 }
 .namebox1{
     width: 141px;
