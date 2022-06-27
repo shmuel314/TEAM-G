@@ -1,4 +1,4 @@
-import FunctionBtn from "./functionBtn";
+import FunctionBtn from "./FunctionBtn";
 import styles from "./style.module.css";
 
 export default function Options() {
