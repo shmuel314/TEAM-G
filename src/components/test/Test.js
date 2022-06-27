@@ -1,5 +1,9 @@
+import QuestionsLevel from "../Common/QuestionsLevel";
+
+
 function Test() {
     return <>
+       <QuestionsLevel/>
        
     </>
 }

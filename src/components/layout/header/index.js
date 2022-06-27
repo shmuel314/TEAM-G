@@ -4,11 +4,11 @@ import nav from './img/nav-icon.png';
 import photoPic from './img/userPhoto.png';
 import "./header.css"
 
-//group c- yoav & yehoshua
+//group c- yoav & yehoshua 
 
 export default function Header() {
-   const [pageName, setPageName] = useContext(pageNameContext) //assuming context is in use
-      setPageName("default page Name ")// default page name so you see it
+   const pageNameContextLocal = useContext(pageNameContext) //assuming context is in use
+     console.log(pageNameContextLocal.pageName);
    
    return (
       <div className='header'>
@@ -17,7 +17,7 @@ export default function Header() {
          </div>
 
          <div className='mid'>
-            {pageName}
+            {pageNameContextLocal.pageName}
          </div>
 
          <div className='right'>

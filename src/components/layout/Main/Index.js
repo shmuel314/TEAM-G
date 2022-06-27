@@ -10,7 +10,7 @@ import TextArea from "../../Common/TextArea/Index";
 function Main() {
   return (
     <>
-      <Header />
+      <Header/>
 
       {/* content */}
       <Routes>
