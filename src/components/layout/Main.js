@@ -12,6 +12,7 @@ function Main() {
     <>
       <Header />
 
+      {/* content */}
       <Routes>
         {/* Team A */}
         <Route path="teams-path">
