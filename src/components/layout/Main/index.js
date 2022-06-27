@@ -1,10 +1,11 @@
-import Test from "../../test/Test";
+// import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
 // import Popup from "../popup/Popup";
-import { Outlet, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
+import Page1 from '../../../pages/Assessments/Page1/index'
 
 
 function Main() {
@@ -64,7 +65,7 @@ function Main() {
 
 
         {/* Test */}
-        <Route path='/test' element={<Test />} />
+        <Route path='/test' element={<Page1 />} />
 
 
       </Routes>
