@@ -1,7 +1,11 @@
 import Results from "../../pages/TrainFocus/TrainFocusResults";
 
 function Test() {
-  return <></>;
+  return (
+    <>
+      <Results />
+    </>
+  );
 }
 
 export default Test;

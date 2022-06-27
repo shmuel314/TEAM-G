@@ -4,7 +4,7 @@
     width: 299.82px;
     height: 316px;
     left: 20%;
-    top: 15%;
+    top: 25%;
   }
   .rectangle {
     box-sizing: border-box;
@@ -51,8 +51,6 @@
     position: fixed;
     bottom: 0%;
     left: 30%;
-    border-radius: 40%;
-    background-color: orange;
   }
   .rectangle1 {
     box-sizing: border-box;
@@ -60,14 +58,12 @@
     position: absolute;
     width: 382px;
     height: 135px;
-    left: 19.08px;
+    left: 25%;
     top: 70%;
 
     background: #7d56a5;
     border: 1.5px solid #252525;
     border-radius: 20px;
     transform: rotate(2.46deg);
-  }
-  #mobile {
   }
 }
