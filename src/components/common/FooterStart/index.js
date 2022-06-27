@@ -1,4 +1,5 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 // Shira from Team G - Shmuel
 
@@ -9,13 +10,13 @@ import "./style.css";
 //props.explanation
 //props.img
 
-function StartComponent(props) {
+function FooterStart(props) {
   return (
     <div className="bottomStart">
       <div className="outBtn">
       <Link to={props.route}>  <button
           className="startBtn"
-          onClick={() => {props.startFunction}}
+          onClick={props.startFunction}
         >
           <div className="play"></div>
         </button></Link>
@@ -35,4 +36,4 @@ function StartComponent(props) {
   );
 }
 
-export default StartComponent;
+export default FooterStart;
