@@ -1,11 +1,9 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-import Popup from "../popup/Popup";
-import { Outlet, Route, Routes } from "react-router-dom"
-import TextArea from "../common/TextArea/Index";
-import Context from "../../../context";
-
+import Popup from "../Popup";
+import { Outlet, Route, Routes } from "react-router-dom";
+import TeamF from "../../teams/TeamF";
 
 function Main() {
   return (
@@ -46,7 +44,7 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+          <Route index element={TeamF} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
@@ -62,11 +60,8 @@ function Main() {
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
-
         {/* Test */}
-        <Route path='/test' element={<Test />} />
-
-
+        <Route path="/test" element={<Test />} />
       </Routes>
 
       <Nav />
