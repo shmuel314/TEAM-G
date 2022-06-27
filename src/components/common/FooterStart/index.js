@@ -21,7 +21,7 @@ function FooterStart(props) {
           <div className="play"></div>
         </button></Link>
       </div>
-      <div className="box">
+      <div className="footer-start-box">
         <div className="startTitle">{props.title}</div>
         <div className="explanation">
           <p>

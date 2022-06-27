@@ -2,10 +2,15 @@ import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
 // import Popup from "../popup/Popup";
-import { Outlet, Route, Routes } from "react-router-dom"
+// import { Outlet, Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
+import Results from "../../../pages/TrainFocus/TrainFocusResults";
+//  import Popup from "./popup/Popup";
+import { Outlet, Route, Routes } from "react-router-dom";
+// import TextArea from "../common/TextArea/Index";
+// import Context from "../../../context";
 
 function Main() {
   return (
@@ -56,6 +61,7 @@ function Main() {
           <Route path="exercise" element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
+          {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
         {/* Team H */}
@@ -64,11 +70,8 @@ function Main() {
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
-
         {/* Test */}
-        <Route path='/test' element={<Test />} />
-
-
+        <Route path="/test" element={<Test />} />
       </Routes>
 
       <Nav />
