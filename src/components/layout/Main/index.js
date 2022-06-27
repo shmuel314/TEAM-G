@@ -16,6 +16,7 @@ import Exercise from "../../../pages/TrainFocus/Exercise";
 // import Context from "../../../context";
 
 function Main() {
+
   return (
     <>
       <Header />
@@ -54,7 +55,7 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+          <Route index element={<></>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
