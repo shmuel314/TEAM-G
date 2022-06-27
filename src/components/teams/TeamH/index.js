@@ -1,5 +1,5 @@
 import Clock from '../../Common/Clock'
-import GraphDashboard from '../../Common/graphDashboard/GraphCont'
+import GraphDashboard from '../../Common/graphDashboard'
 import Instructions from '../../../pages/FreeStyle/Instructions'
 function TeamH() {
     return (
