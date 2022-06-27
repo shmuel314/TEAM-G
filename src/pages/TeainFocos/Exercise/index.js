@@ -2,8 +2,7 @@ import { useState  } from 'react'
 import "./style.css"
 import arow from "./arow.png"
 import {useNavigate} from 'react-router-dom'
-import SabmitBtn from '../../../components/common/SubmitBtn'
-
+import SabmitBtn from '../../../components/common/SabmitBtn'
 
 function Exercise(){
     const [RoundNumber, setRoundNumber] = useState(1)
@@ -16,22 +15,20 @@ function Exercise(){
         function Round(){
             if(RoundNumber>4){
                 setDailyStoppingDistance(DailyStoppingDistance/4)
-                navigate('/train-focus/result', {RoundNumber})
+                navigate('/TrainFocos/FocosResult', {RoundNumber})
             } 
              else{
     setRoundNumber(RoundNumber+1)
     setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
-    navigate('/train-focus/StartFocus')
+    navigate('/TrainFocos/StartFocos')
    }
     }
     
     switch(side){
         case 0:
       return <>
-      <div className="bo">
-        <SabmitBtn onClick={Round}/>
-        </div>
-          {/* <button className= "button" onClick={Round}>stop</button> */}
+      <SabmitBtn/>
+          <button className= "button" onClick={Round}>stop</button>
      </>
      break;
      case 1:

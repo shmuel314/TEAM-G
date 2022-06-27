@@ -1,12 +1,12 @@
 import "./style.css";
 
-export default function SubmitBtn() {
+export default function SubmitBtn(props) {
   return (
     <div className="submit">
-      <div type="button" className="word">
-        
+      <button type="button" className="word" onClick={props.onClick}
+        >
         submit
-      </div>
+      </button>
     </div>
   );
 }
