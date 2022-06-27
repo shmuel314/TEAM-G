@@ -1,16 +1,16 @@
 
-import Header from "./Header";
-import Nav from "./Nav";
-import Popup from "./Popup";
-import { Outlet, Route, Routes } from "react-router-dom";
-import Test from "../test/Test";
+// import Header from "./Header";
+// import Nav from "./Nav";
+// import Popup from "./Popup";
+import { Route, Routes } from "react-router-dom";
+import Exercise from "../../../pages/TeainFocos/Exercise";
 
 
 
 function Main() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <Routes>
         {/* Team A */}
@@ -50,28 +50,20 @@ function Main() {
         </Route>
 
         {/* Team G */}
-        <Route path="teams-path">
+         <Route path="TrainFocos">
           <Route index element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
-        </Route>
+          <Route path="components-path" element={<>team's components</>} /> 
+          <Route path="Exercise" element={<Exercise/>} />
+
+         </Route> 
 
         {/* Team H */}
         <Route path="teams-path">
           <Route index element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
-
-
-        {/* Test */}
-        <Route path='/test' element={<Test />} />
-
-
-      </Routes>
-
-      <Nav />
-      <Popup />
-    </>
-  );
+        </Routes>
+        </>
+)
 }
-
 export default Main;

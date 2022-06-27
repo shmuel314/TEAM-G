@@ -1,21 +1,26 @@
 import { useState  } from 'react'
 import "./style.css"
 import arow from "./arow.png"
+import {useNavigate} from 'react-router-dom'
 
-function Test(){
+function Exercise(){
     const [RoundNumber, setRoundNumber] = useState(1)
     const [DailyStoppingDistance, setDailyStoppingDistance] = useState(0)
+    const navigate= useNavigate();
     const StoppingDistance = 3
     const side = 1
     
+    
         function Round(){
-            setRoundNumber(RoundNumber+1)
-            setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
             if(RoundNumber>4){
                 setDailyStoppingDistance(DailyStoppingDistance/4)
-            }
-    
-     alert(DailyStoppingDistance)
+                navigate('/TrainFocos/FocosResult', {RoundNumber})
+            } 
+             else{
+    setRoundNumber(RoundNumber+1)
+    setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
+    navigate('/TrainFocos/StartFocos')
+   }
     }
     
     switch(side){
@@ -47,4 +52,9 @@ function Test(){
        
     }
 
-    export default Test
+    export default Exercise
+
+
+
+
+ 
