@@ -1,7 +1,7 @@
 import Page4 from "../../pages/Assessments/Page4";
 
 import Calc from "../../pages/Assessment/Calc";
-import Page6 from "../../pages/Assessments/Page6";
+// import Page6 from "../../pages/Assessments/Page6";
 import RatingAndScore from "../Common/ReatingAndScore";
 function Test() {
     // function Test() {
