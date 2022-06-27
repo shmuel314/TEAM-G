@@ -1,11 +1,10 @@
-import styles from './style.module.css'
+// Creator : Team A - Daniel & Yehonatan
+  import './style.css';
 
-// Creator : Team A - Yehonatan & Daniel
-function TitleRead(){
-    return <div className={styles.titelRead}>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, corrupti!
-    </div>
-
+export default function TitleRead () 
+{
+return <div className="title-read"> 
+{/* title  */}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor quibusdam cum?
+</div>
 }
-
-export default TitleRead;
