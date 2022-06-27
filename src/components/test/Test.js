@@ -9,9 +9,9 @@ import Questions from "../common/Questions";
 
 function Test() {
     return <>
-     <CalibrateCam/>
+     {/* <CalibrateCam/> */}
      {/* <Results/> */}
-     {/* <StartFocus/> */}
+     <StartFocus/>
     </>
   ;
 }
