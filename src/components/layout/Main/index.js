@@ -1,7 +1,7 @@
 import Test from "../../test/Test";
 import Header from "../Header";
 import Nav from "../Nav";
-import Popup from "../Popup/Popup";
+import Popup from "../../layout/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 
@@ -10,6 +10,7 @@ import ExerciseClock from "../../../pages/TrainReading/Level/ExerciseClock"
 import ExerciseQuestion from "../../../pages/TrainReading/Level/ExerciseQuestion"
 import ExerciseRate from "../../../pages/TrainReading/Level/ExerciseRate"
 import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult"
+// import TeamC from '../../teams/TeamC'
 
 
 function Main() {
@@ -79,7 +80,7 @@ function Main() {
       </Routes>
 
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }

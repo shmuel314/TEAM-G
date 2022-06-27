@@ -8,7 +8,7 @@ import "./header.css"
 
 export default function Header() {
    const [pageName, setPageName] = useContext(pageNameContext) //assuming context is in use
-      setPageName("default page Name ")// default page name so you see it
+      // setPageName("default page Name ")// default page name so you see it
    
    return (
       <div className='header'>
