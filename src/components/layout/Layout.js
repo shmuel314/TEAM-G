@@ -1,6 +1,9 @@
 import React, { createContext, useState } from 'react';
 import Main from './Main';
+<<<<<<< HEAD
 import Login from './login';
+=======
+>>>>>>> fd47036ace3813e6d878c9b62cedbf280cad1ac3
 export const pageNameContext = createContext();
 
 export default function Layout() {

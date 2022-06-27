@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css';
 import SoundBar from "./SoundBar.png"
-import Clock from '../../../../components/common/Clock'
+// import Clock from '../../../../components/common/Clock'
 
 
 const index = () => {
