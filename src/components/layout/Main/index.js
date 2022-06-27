@@ -9,7 +9,7 @@ import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
 import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
-import Exercise from "../../../pages/TrainFocos/Exercise";
+import Exercise from "../../../pages/TrainFocus/Exercise";
 //  import Popup from "./popup/Popup";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
@@ -18,7 +18,7 @@ import Exercise from "../../../pages/TrainFocos/Exercise";
 function Main() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
       content
       <Routes>
