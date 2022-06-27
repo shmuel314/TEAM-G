@@ -1,9 +1,14 @@
 import Clock from '../../Common/Clock'
+import GraphDashboard from '../../Common/graphDashboard/GraphCont'
+import Instructions from '../../../pages/FreeStyle/Instructions'
 function TeamH() {
     return (
         <>
         <div>TeamH</div>
-        <Clock>milka:</Clock>
+        {/* <GraphDashboard></GraphDashboard> */}
+        <Instructions></Instructions>
+        {/* <Clock>milka:</Clock> */}
+
 
         </>
         
