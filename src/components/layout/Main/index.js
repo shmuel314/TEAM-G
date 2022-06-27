@@ -3,8 +3,7 @@ import Header from "../header";
 import Nav from "../Nav";
 import Popup from "../Popup/index";
 import { Outlet, Route, Routes } from "react-router-dom";
-import TextArea from "../../Common/TextArea/Index";
-// import Context from "../../../context";
+// import TeamF from "../../TeamF";
 
 function Main() {
   return (
@@ -45,7 +44,7 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={TeamF} />
+          <Route index element={<></>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 

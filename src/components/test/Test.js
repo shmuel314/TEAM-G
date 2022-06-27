@@ -1,4 +1,4 @@
-import { NavBar } from "../Common/Nav/index";
+import { NavBar } from "../common/Nav/index";
 
 function Test() {
   return (
