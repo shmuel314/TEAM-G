@@ -1,5 +1,4 @@
-
-import TeamF from "../common/TeamF";
+import { NavBar } from "../common/NavBar";
 
 function Test() {
   return (
