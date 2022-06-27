@@ -1,6 +1,5 @@
 import React, { createContext, useState } from 'react';
-// import Header from './header/Header';
-import Main from './main/Main';
+import Main from './Main/Main';
 import Login from './login/Login';
 export const pageNameContext = createContext();
 
@@ -16,7 +15,7 @@ export default function Layout() {
             <pageNameContext.Provider value={pageNameState}>
                 {/* <Login setUserLoginInfo={setUserLoginInfo}/> */}
                 <Main userLoginInfo={userLoginInfo}/>
-                <Login setUserLoginInfo="setUserLoginInfo"/>
+                <Login setUserLoginInfo={setUserLoginInfo}/>
             </pageNameContext.Provider>
         </div>
     )
