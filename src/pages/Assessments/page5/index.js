@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css";
-import QuestionBoard from '../../../components/Common/QuestionBoard'
-import SubmitBtn from '../../../components/Common/SubmitBtn'
+import QuestionBoard from '../../../components/common/QuestionBoard'
+import SubmitBtn from '../../../components/common/SubmitBtn'
 import { useState } from 'react';
 
 export default function Page5() {
@@ -11,8 +11,8 @@ export default function Page5() {
     // result.length=4;
     let arr1 = [];
     arr1.length = 5;
-    result.map((v,i)=>{
-        arr1[v.orderNum]=v;
+    result.map((v, i) => {
+        arr1[v.orderNum] = v;
         console.log(arr1)
     })
     const ans = [
@@ -38,7 +38,7 @@ export default function Page5() {
 
         let count = 0;
         ans.map((v, i) => {
-            if ( v.ans == arr1[(i+1)].answer) {
+            if (v.ans == arr1[(i + 1)].answer) {
                 //    setarrOfAnswers({orderNum:v.orderNum,answer:true})
                 arrOfAnswers.push({ orderNum: arr1.orderNum, answer: true })
                 count++;
@@ -81,4 +81,34 @@ export default function Page5() {
 
         </>
     )
+}
+function Calc() {
+    // server
+    const numberOfLettersPerLine = [40, 50, 44, 80, 54, 75, 42, 14];
+    //from api
+    const timePerLine = [5000, 8000, 7000, 1000, 2000, 3000];
+    numberOfLettersPerLine.pop();
+    numberOfLettersPerLine.shift();
+    let wpm = [];
+    let sum = 0;
+    for (let i = 0; i < timePerLine.length; i++) {
+        wpm.push(numberOfLettersPerLine[i] / 5 / ((timePerLine[i] / 1000) * 60));
+        sum += timePerLine[i];
+    }
+    console.log(wpm);
+    let avg = sum / timePerLine.length;
+    let std = 0;
+    for (let i = 0; i < wpm.length; i++) {
+        std += (wpm[i] - avg) ** 2;
+    }
+    std = std ** 0.5;
+    console.log("avg:" + avg);
+    console.log("std:" + std);
+
+    return (
+        <div>
+            <div>Avg {avg}</div>
+            <div>Std {std}</div>
+        </div>
+    );
 }
