@@ -1,13 +1,19 @@
-import React from 'react'
 import styles from './style.module.css';
+import React, { useContext } from 'react'
+import { pageNameContext } from '../../../../components/layout/Layout'
+import Questions from "../../../../components/common/Questions";
+import SubmitBtn from "../../../../components/common/SubmitBtn";
+
+//group c- yehoshua++shaul
 
 
-const index = () => {
+export default function QuestionsLevel() {
+  const pageInfo = useContext(pageNameContext)
+  pageInfo.setPageName("QuestionsLevel")
   return (
-    <div>
-      <h1>Exercise Question</h1>
-    </div>
+    <>
+      <Questions />
+      <SubmitBtn />
+    </>
   )
 }
-
-export default index

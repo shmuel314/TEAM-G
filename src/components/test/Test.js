@@ -1,9 +1,9 @@
-import QuestionsLevel from "../Common/QuestionsLevel";
+import ExerciseQuestion from "../../pages/TrainReading/Level/ExerciseQuestion";
 
 
 function Test() {
     return <>
-       <QuestionsLevel/>
+       <ExerciseQuestion/>
        
     </>
 }

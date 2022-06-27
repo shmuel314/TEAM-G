@@ -1,10 +1,10 @@
 import React, { createContext, useState } from 'react';
+import Main from './Main';
+import Login from './login';
 
 export const pageNameContext = createContext()
 
 //group c- yoav & yehoshua 
-import Main from './Main';
-import Login from './login';
 
 export default function Layout() {
     const [pageName, setPageName] = useState("||||| default page name |||||");
