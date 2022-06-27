@@ -5,8 +5,9 @@ import Nav from "../Nav";
 import { Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
-import Page1 from '../../../pages/Assessments/Page1/index'
+// import Page1 from '../../../pages/Assessments/Page1/index'
 
+// import Page3 from "../../.././pages/Assessments/Page3/index"
 
 function Main() {
   return (
@@ -65,13 +66,17 @@ function Main() {
 
 
         {/* Test */}
-        <Route path='/test' element={<Page1 />} />
+<<<<<<< HEAD
+  <Route path='/test' element={<Page1 />} />
+=======
+        <Route path='/test' element={<Page3 />} />
+>>>>>>> yoni
 
 
-      </Routes>
+      </Routes >
 
-      <Nav />
-      {/* <Popup /> */}
+    <Nav />
+  {/* <Popup /> */ }
     </>
   );
 }
