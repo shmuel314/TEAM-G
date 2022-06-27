@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-
+import {
+  CountdownCircleTimer,
+  useCountdown,
+} from "react-countdown-circle-timer";
+import { useState } from "react";
 import "./style.module.css";
 
 const renderTime = ({ remainingTime }) => {
@@ -18,6 +21,20 @@ const renderTime = ({ remainingTime }) => {
 };
 
 function Clock() {
+  const {
+    path,
+    pathLength,
+    stroke,
+    strokeDashoffset,
+    remainingTime,
+    elapsedTime,
+    size,
+    strokeWidth,
+  } = useCountdown({ isPlaying: false, colors: "#abc" });
+  const [play, setPlay] = useState(false);
+
+  // if (play)
+
   return (
     <div className="timer-wrapper">
       <CountdownCircleTimer
@@ -30,6 +47,9 @@ function Clock() {
       </CountdownCircleTimer>
     </div>
   );
+
+  // return <CountdownCircleTimer></CountdownCircleTimer>;
+  // console.log("stop");
 }
 
 export default Clock;
