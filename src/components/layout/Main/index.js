@@ -5,8 +5,6 @@ import Nav from "../Nav";
 import { Outlet, Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
-import Page1 from '../../../pages/Assessments/Page1/index'
-// import Page5 from "../../../pages/Assessments/Page5";
 
 
 function Main() {
