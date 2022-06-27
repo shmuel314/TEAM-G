@@ -15,8 +15,8 @@ export default function Layout() {
         <div className='Layout'>
             <pageNameContext.Provider value={pageNameState}>
                 {/* <Login setUserLoginInfo={setUserLoginInfo}/> */}
-                <Login setUserLoginInfo="setUserLoginInfo"/>
                 <Main userLoginInfo={userLoginInfo}/>
+                <Login setUserLoginInfo="setUserLoginInfo"/>
             </pageNameContext.Provider>
         </div>
     )
