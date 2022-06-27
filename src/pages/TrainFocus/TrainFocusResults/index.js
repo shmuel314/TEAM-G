@@ -25,7 +25,7 @@ function Results(props) {
   };
   return (
     <>
-      <img className="image" src={image} alt="img"></img>
+      <img className="train-focus-result-image" src={image} alt="img"></img>
       <div className="rectangle1">
         <div className="image2">
           <img src={image2} height="25%"></img>
@@ -37,7 +37,7 @@ function Results(props) {
         </div>
         <h5 className="text">Comfortable Reading</h5>
         <span className="avg">
-          <b>{totalAvg} cm</b>
+          <b>{totalAvg} </b>
         </span>
       </div>
       <Link to="student/exercise">

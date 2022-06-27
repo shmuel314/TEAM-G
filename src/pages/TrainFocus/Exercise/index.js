@@ -19,7 +19,7 @@ function Exercise(){
              else{
     setRoundNumber(RoundNumber+1)
     setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
-    navigate('/train-focus/StartFocus')
+    navigate('/train-focus/result')
    }
     }
     
