@@ -10,7 +10,7 @@ function StartFocus() {
   function startFunction() {
     console.log("start");
   };
-    const route = "/train-focus/result"
+    const route = "/train-focus/exercise"
 
 
   return (
