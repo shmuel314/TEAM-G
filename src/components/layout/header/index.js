@@ -1,24 +1,27 @@
 import { useContext, useState } from 'react';
 import { pageNameContext } from '../Layout';
 import nav from './img/nav-icon.png';
+import photoPic from './img/userPhoto.png';
+import "./header.css"
 
-export default function Header(props) {
-   const [pageName, setPageName] = useContext(pageNameContext) //adduming contect is in use
+//group c- yoav & yehoshua
+
+export default function Header() {
+   const [pageName, setPageName] = useContext(pageNameContext) //assuming context is in use
+      setPageName("default page Name ")// default page name so you see it
+   
    return (
-      <div>
-         <div>
-            <img src={nav}></img>
+      <div className='header'>
+         <div className='left'>
+            <img src={nav} alt="navbar"></img>
          </div>
 
-         <div>
-            {"Page Name"}
-            {/* {props.pageName} - alternative  */}
+         <div className='mid'>
+            {pageName}
          </div>
 
-         <div>
-            <p>kgd</p>
-            <img src={nav} alt="User Name" />
-            {/* <img src={props.userLoginInfo.userImage} alt={props.userLoginInfo.userName} /> */}
+         <div className='right'>
+            <img src={photoPic} alt="User Name" />
          </div>
       </div>
    )
