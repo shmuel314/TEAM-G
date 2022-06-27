@@ -1,9 +1,9 @@
 import "./style.css";
 
-export default function SubmitBtn() {
+export default function SubmitBtn({checkResults}) {
   return (
     <div className="submit">
-      <div type="button" className="word">
+      <div onClick={checkResults} type="button" className="word">
         
         submit
       </div>
