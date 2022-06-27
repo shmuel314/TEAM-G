@@ -1,9 +1,9 @@
-import DashButt from "../DashButt";
+import DashButt from "../../common/DashButt";
 import { navBackButt as NavBackButt } from "../navBackButt";
-import CancelBtn from "../cancelBtn";
+import CancelBtn from "../../common/cancelBtn";
 import DashboardBtn from "../DashboardBtn";
-import TrueBtn from "../trueBtn";
-import { NavBar } from "../NavBar";
+import TrueBtn from "../../common/trueBtn";
+import { NavBar } from "../../common/Nav";
 
 // Creator : Team F-Oren
 function TeamF() {

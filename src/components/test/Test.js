@@ -1,7 +1,14 @@
-import SubmitBtn from "../common/SubmitBtn";
-
+import Options from "../../pages/Dashboard/options";
+import { NavBar as Nav } from "../common/Nav";
 function Test() {
-  return <></>;
+  return (
+    <>
+      {/* <Options /> */}
+      <Nav />
+    </>
+  );
 }
-
+function bbb(){
+  alert("nrjnfrj")
+}
 export default Test;
