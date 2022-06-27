@@ -5,8 +5,11 @@ export function NavButton(props) {
   return (
     <>
       <div>
-        <span>{props.text}</span>
-        <span>{props.icon}</span>
+        <span></span>
+        <span>
+          {props.icon}
+          {props.text}
+        </span>
       </div>
     </>
   );
