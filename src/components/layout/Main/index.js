@@ -5,7 +5,11 @@ import Nav from "../Nav";
 import { Outlet, Route, Routes } from "react-router-dom"
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
+<<<<<<< HEAD:src/components/layout/Main/Main.js
 import Page3 from "../../../pages/Assessments/Page3";
+=======
+
+>>>>>>> 70a33661e553fd9ae47658a58d4ea2c2c56f2986:src/components/layout/Main/index.js
 
 function Main() {
   return (
