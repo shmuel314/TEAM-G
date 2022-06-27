@@ -4,7 +4,7 @@ import nav from './img/nav-icon.png';
 import photoPic from './img/userPhoto.png';
 import "./header.css"
 
-
+//group c- yoav & yehoshua
 
 export default function Header() {
    const [pageName, setPageName] = useContext(pageNameContext) //assuming context is in use
