@@ -13,27 +13,27 @@ function Box1() {
   // yishai
   return (
     <>
-     
       <div className="grid-container">
         <>
-      {button.map((v) => {
-                return (
-          <div>
-            <div className=" box  boxbehind"></div>
-            <div className="box box1" onClick={(e) => console.log("df")/* props.func(v.name) */ }>
-              <div className="icon1">
-                <img src={v.icon} alt="book" />{" "}
+          {button.map((v) => {
+            return (
+              <div className="placebox">
+                <div className=" box  boxbehind"></div>
+                <div
+                  className="box box1"
+                  onClick={(e) => this.className="box2"/* console.log("df") */ /* props.func(v.name) */}
+                >
+                  <div className="icon1">
+                    <img src={v.icon} alt="book" />{" "}
+                  </div>
+
+                  <div className="namebox">{v.name}</div>
+                </div>
               </div>
-
-              <div className="namebox">{v.name}</div>
-            </div>
-          </div>
-          
-          );
-        })}
-    </>
-
-        </div>
+            );
+          })}
+        </>
+      </div>
     </>
   );
 }
