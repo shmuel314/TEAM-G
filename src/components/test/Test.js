@@ -1,3 +1,4 @@
+import Calc from "../../pages/Assessment/Calc";
 import Page6 from "../../pages/Assessments/Page6";
 import RatingAndScore from "../Common/ReatingAndScore";
 function Test() {
@@ -5,6 +6,7 @@ function Test() {
     <>
       <RatingAndScore wpm={120} std={5} compScore={8} />
       {/* <Page6 /> */}
+      <Calc />
     </>
   );
 }

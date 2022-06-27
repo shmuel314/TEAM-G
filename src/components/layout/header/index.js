@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <div>
       <div>
-        <img src={nav}></img>
+        <img src={nav} alt=""></img>
       </div>
 
       <div>

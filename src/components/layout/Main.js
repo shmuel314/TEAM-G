@@ -63,7 +63,7 @@ function Main() {
       </Routes>
 
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }
