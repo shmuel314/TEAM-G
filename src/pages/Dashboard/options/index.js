@@ -1,3 +1,4 @@
+import './style.css'
 import FunctionBtn from "../FunctionBtn";
 import { FiLock } from "react-icons/fi";
 import { FcReading } from "react-icons/fc";
