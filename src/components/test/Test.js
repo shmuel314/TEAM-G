@@ -1,8 +1,10 @@
 import Page6 from "../../pages/Assessments/Page6";
+import RatingAndScore from "../Common/ReatingAndScore";
 function Test() {
   return (
     <>
-      <Page6 />
+      <RatingAndScore wpm={120} std={5} compScore={8} />
+      {/* <Page6 /> */}
     </>
   );
 }
