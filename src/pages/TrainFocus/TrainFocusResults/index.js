@@ -7,6 +7,7 @@ import image2 from "./Vector (1).png";
 import image4 from "./Vector (4).png";
 // import image3 from "./Vector (3).png";
 import image3 from "./Line 237 (Stroke).png";
+import ReatingAndScore from "../../../components/common/ReatingAndScore";
 
 // import {useEffect} from React
 // Creator : Team G - Shmuel
@@ -38,6 +39,7 @@ function Results(props) {
           <b>{totalAvg} cm</b>
         </span>
       </div>
+      {/* <ReatingAndScore /> */}
       <Link to="student/exercise">
         <SubmitBtn className="btn" onClick={updateDB} />
       </Link>

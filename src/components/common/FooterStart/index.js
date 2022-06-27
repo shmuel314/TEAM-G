@@ -1,23 +1,38 @@
 import "./style.css";
-import startButton from "./startButton.png" 
 
-// Focus : Shira from Team G - Shmuel 
+// Shira from Team G - Shmuel
 
+// יש לשלוח לקומפוננטה הזו:
+//props.route  ----> להכניס את הראוט אליו הלינק צריך ללכת
+// props.startFunction   --->הפונקציה שתפעל בעת לחיצה על הכפתור, היא צריכה להעביר לדף הבא
+//props.title
+//props.explanation
+//props.img
 
-function FooterStart(props) {
+function StartComponent(props) {
   return (
-     <div className="bottomStart">
-    
-    <div className="startBtn"><img src= {startButton} /></div>
-    <div className="box">
-        <div className="startTitle">{props.children}MY TITLE</div>
-        <div className="explanation"><p>{props.children}my explanation... blablablablablablablablabla</p></div>
-        {/* //   TODO-> add an img to the div below  */}
-        <div className="myEmoji"><img></img></div>      
+    <div className="bottomStart">
+      <div className="outBtn">
+      <Link to={props.route}>  <button
+          className="startBtn"
+          onClick={() => {props.startFunction}}
+        >
+          <div className="play"></div>
+        </button></Link>
       </div>
-    
-     </div>
+      <div className="box">
+        <div className="startTitle">{props.title}</div>
+        <div className="explanation">
+          <p>
+            {props.explanation}
+          </p>
+        </div>
+        <div className="myEmoji">
+          <img src={props.img}></img>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default FooterStart;
+export default StartComponent;

@@ -51,10 +51,12 @@ function Main() {
         </Route>
 
         {/* Team G */}
-        <Route path="teams-path">
+        <Route path="/train-focus">
           <Route index element={<>team's components</>} />
+          <Route path="" element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
-          <Route path="/FocusResult" element={<Results />} />
+          <Route path="components-path" element={<>team's components</>} />
+          <Route path="FocusResult" element={<Results />} />
         </Route>
 
         {/* Team H */}
