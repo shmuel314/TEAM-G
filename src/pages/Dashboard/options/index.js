@@ -26,8 +26,7 @@ function Box1() {
             return (
               <Link to ={v.path}><div className="placebox">
                 <div className=" box  boxbehind"></div>
-                <div
-                  className={selected===v.name?'box box1':'box box2'}
+                <div className={selected===v.name?'box box1':'box box2'}
                   
                   onClick={(e) => setSelected(v.name) /* props.func(v.name) */}
                 >
