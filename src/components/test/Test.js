@@ -1,12 +1,7 @@
-
 import SubmitBtn from "../common/SubmitBtn";
 
 function Test() {
-  return (
-    <>
-      
-    </>
-  );
+  return <></>;
 }
 
 export default Test;
