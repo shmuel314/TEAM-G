@@ -1,6 +1,15 @@
 .icon{
-    flex-direction: row;
+ 
+    display: inline-block;
+    margin-right: 10px;
 }
 .txt{
-    display: inline-block;
+    margin-left: 78px;
+    
+    
+}
+.outerdiv{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
 }
