@@ -8,5 +8,7 @@ function Test() {
     </>
   );
 }
-
+function bbb(){
+  alert("nrjnfrj")
+}
 export default Test;
