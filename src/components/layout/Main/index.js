@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom"
 
 
 function Main() {
+
   return (
     <>
       <Header />
@@ -69,7 +70,7 @@ function Main() {
       </Routes>
 
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 }

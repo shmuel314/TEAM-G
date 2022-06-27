@@ -1,7 +1,10 @@
-
+import Options from "../../pages/Dashboard/options" 
 
 function Test() {
-  return <></>;
+  return <>
+<Options />
+
+  </>;
 }
 
 export default Test;
