@@ -1,0 +1,20 @@
+.logoImg{
+width: 53px;
+height: 47px;
+
+flex: none;
+margin-left: 38px;
+order: 0;
+flex-grow: 0;
+}
+.logoImg2{
+    width: 68px;
+    height: 17px;
+    margin-bottom:15px;
+    order: 1;
+    flex-grow: 0;
+    }
+.head{
+    margin-top: 54px;
+}
+
