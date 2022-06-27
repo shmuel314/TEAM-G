@@ -3,7 +3,7 @@ import Header from "../header";
 import Nav from "../Nav";
 import Popup from "../Popup/index";
 import { Outlet, Route, Routes } from "react-router-dom";
-// import TeamF from "../../TeamF";
+
 
 function Main() {
   return (
