@@ -1,9 +1,10 @@
-import { NavBar } from "../common/Nav";
+
+import SubmitBtn from "../common/SubmitBtn";
 
 function Test() {
   return (
     <>
-      <NavBar />
+      <SubmitBtn name = "Submit"/>
     </>
   );
 }
