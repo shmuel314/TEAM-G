@@ -3,8 +3,8 @@ import Header from "../header";
 import Nav from "../Nav";
 import Popup from "../popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import TextArea from "../common/TextArea/Index";
-import Context from "../../../context";
+// import TextArea from "../common/TextArea/Index";
+// import Context from "../../../context";
 
 
 function Main() {
@@ -51,8 +51,10 @@ function Main() {
         </Route>
 
         {/* Team G */}
-        <Route path="teams-path">
+        <Route path="/train-focus">
           <Route index element={<>team's components</>} />
+          <Route path="" element={<>team's components</>} />
+          <Route path="components-path" element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
