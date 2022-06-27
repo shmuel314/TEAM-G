@@ -5,47 +5,87 @@ import {
   useCountdown,
 } from "react-countdown-circle-timer";
 import { useState } from "react";
-import "./style.module.css";
+import styles from "./style.module.css";
+import SquareButton from "../SquareButton";
+import RoundedButton from "../RoundedButton";
 
-const renderTime = ({ remainingTime }) => {
-  const minutes = Math.floor(remainingTime / 60);
-  const seconds = remainingTime - minutes * 60;
+// Creator : Team H - Milka
 
-  return (
-    <div className="timer">
-      <div className="value">
-        {minutes}:{seconds}
-      </div>
-    </div>
-  );
-};
+//instructions: when you use this component you should
+//  send a props named "freeStyle" with a value:false.
+// and a props named "time" with the number of seconds you want to excercise
+//for example: for 3 minutes, enter 180
 
-function Clock() {
-  const {
-    path,
-    pathLength,
-    stroke,
-    strokeDashoffset,
-    remainingTime,
-    elapsedTime,
-    size,
-    strokeWidth,
-  } = useCountdown({ isPlaying: false, colors: "#abc" });
+function Clock(props) {
   const [play, setPlay] = useState(false);
+  let freeStyle = false; //Todo: change to props.freeStyle
+  let timeInSeconds = 10; //Todo: change to props.time;
+  const [rapid, setRapid] = useState(0);
+  const [isFinish, setIsFinish] = useState(false);
 
-  // if (play)
+  const renderTime = ({ remainingTime }) => {
+    const minutes = Math.floor(remainingTime / 60);
+    const seconds = remainingTime - minutes * 60;
+    return (
+      <div className="timer">
+        {freeStyle ? (
+          <div className={styles.squarebutton}>
+            <SquareButton>{rapid} LPM</SquareButton>
+          </div>
+        ) : (
+          <div className={styles.value}>
+            {minutes < 10 && 0}
+            {minutes}:{seconds < 10 && 0}
+            {seconds}
+          </div>
+        )}
+        {!isFinish && (
+          <div
+            // className={styles.playPause}
+            onClick={() => {
+              !freeStyle && setPlay(!play);
+            }}
+          >
+            <RoundedButton></RoundedButton>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
-    <div className="timer-wrapper">
-      <CountdownCircleTimer
-        isPlaying
-        duration={180}
-        colors={["#7D56A5"]}
-        onComplete={() => ({ shouldRepeat: true, delay: 1 })}
-      >
-        {renderTime}
-      </CountdownCircleTimer>
-    </div>
+    <>
+      {freeStyle && (
+        <button
+          className={styles.plusMinus}
+          onClick={() => setRapid(rapid + 2)}
+        >
+          +
+        </button>
+      )}
+      <div>
+        <CountdownCircleTimer
+          rotation={"counterclockwise"}
+          isPlaying={play}
+          duration={timeInSeconds}
+          colors={["#7D56A5"]}
+          onComplete={() => ({ shouldRepeat: false, delay: 1 })}
+          trailColor={"#FEEFEC"}
+          strokeLinecap={"square"}
+          //Todo: disappear platPause button when complete
+        >
+          {renderTime}
+        </CountdownCircleTimer>
+      </div>
+      {freeStyle && (
+        <button
+          className={styles.plusMinus}
+          onClick={() => setRapid(rapid - 2)}
+        >
+          <div className={styles.plusMinusSign}>-</div>
+        </button>
+      )}
+    </>
   );
 
   // return <CountdownCircleTimer></CountdownCircleTimer>;
