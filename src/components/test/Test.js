@@ -1,7 +1,7 @@
-import React from 'react'
-
-export default function Test() {
-  return (
-    <div>Test</div>
-  )
+function Test() {
+    return <>
+       
+    </>
 }
+
+export default Test;
