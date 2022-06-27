@@ -1,7 +1,7 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-// import Popup from "../popup/Popup";
+import Popup from "../Popup/Popup"
 import {  Route, Routes } from "react-router-dom"
 import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 // import TextArea from "../common/TextArea/Index";
@@ -11,9 +11,9 @@ import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 function Main() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
-      {/* content */}
+      content
       <Routes>
         {/* Team A */}
         <Route path="teams-path">
@@ -53,7 +53,7 @@ function Main() {
 
         {/* Team G */}
         <Route path="TrainFocus">
-          <Route path="components-path" element={<>team's components</>} /> */}
+          <Route path="components-path" element={<>team's components</>} /> */
           <Route path="CalibrateCam" element={<CalibrateCam/>} />
         </Route>
 
@@ -65,13 +65,13 @@ function Main() {
 
 
         {/* Test */}
-        <Route path='test' element={<CalibrateCam />} />
+        <Route path='test' element={<Test />} />
 
 
       </Routes>
 
       <Nav />
-      {/* <Popup /> */}
+      <Popup />
     </>
   );
 }
