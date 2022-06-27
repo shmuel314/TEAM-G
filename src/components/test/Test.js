@@ -1,9 +1,7 @@
-  
- import Box1 from '../common/DashboardBox/Box1'; 
-function Test(){
-
-    return (<> <Box1 />
-    </>)
-  
+function Test() {
+    return <>
+       
+    </>
 }
-export default Test
+
+export default Test;
