@@ -1,8 +1,9 @@
 import React from 'react'
 import GraphContainer from '../common/graphDashboard'
-
-export default function Test() {
+ function Test() {
   return (
     < GraphContainer/>
   )
 }
+
+export default Test;

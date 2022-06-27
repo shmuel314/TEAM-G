@@ -1,47 +1,55 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-
+import {
+  CountdownCircleTimer,
+  useCountdown,
+} from "react-countdown-circle-timer";
+import { useState } from "react";
 import "./style.module.css";
 
-function Clock() {
-  const renderTime = ({ remainingTime }) => {
-    if (remainingTime === 0) {
-      return <div className="timer">Too lale...</div>;
-    }
+const renderTime = ({ remainingTime }) => {
+  const minutes = Math.floor(remainingTime / 60);
+  const seconds = remainingTime - minutes * 60;
 
-    return (
-      <div className="timer">
-        <div className="text">Remaining</div>
-        <div className="value">{remainingTime}</div>
-        <div className="text">seconds</div>
-      </div>
-    );
-  };
   return (
-    <div className="App">
-      <h1>
-        CountdownCircleTimer
-        <br />
-        React Component
-      </h1>
-      <div className="timer-wrapper">
-        <CountdownCircleTimer
-          isPlaying
-          duration={10}
-          colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
-          colorsTime={[10, 6, 3, 0]}
-          onComplete={() => ({ shouldRepeat: true, delay: 1 })}
-        >
-          {renderTime}
-        </CountdownCircleTimer>
+    <div className="timer">
+      <div className="value">
+        {minutes}:{seconds}
       </div>
-      <p className="info">
-        Change component properties in the code filed on the right to try
-        difference functionalities
-      </p>
     </div>
   );
+};
+
+function Clock() {
+  const {
+    path,
+    pathLength,
+    stroke,
+    strokeDashoffset,
+    remainingTime,
+    elapsedTime,
+    size,
+    strokeWidth,
+  } = useCountdown({ isPlaying: false, colors: "#abc" });
+  const [play, setPlay] = useState(false);
+
+  // if (play)
+
+  return (
+    <div className="timer-wrapper">
+      <CountdownCircleTimer
+        isPlaying
+        duration={180}
+        colors={["#7D56A5"]}
+        onComplete={() => ({ shouldRepeat: true, delay: 1 })}
+      >
+        {renderTime}
+      </CountdownCircleTimer>
+    </div>
+  );
+
+  // return <CountdownCircleTimer></CountdownCircleTimer>;
+  // console.log("stop");
 }
 
-export default { Clock };
+export default Clock;
