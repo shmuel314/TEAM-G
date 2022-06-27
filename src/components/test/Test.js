@@ -1,14 +1,10 @@
-// import { NavBar } from "../Common/Nav/index";
+import Settings from "../../pages/Settings";
+import SubmitBtn from "../../components/common/SubmitBtn";
 
 function Test() {
-  return (
-    <>
-      {/* <Options /> */}
-      {/* <Nav /> */}
-    </>
-  );
+  return <>
+  <Settings/>
+  
+  </>;
 }
-// function bbb() {
-//   alert("nrjnfrj");
-// }
 export default Test;
