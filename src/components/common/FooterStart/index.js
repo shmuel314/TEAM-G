@@ -1,4 +1,4 @@
-import "./shira.css";
+import "./style.css";
 
 // Shira from Team G - Shmuel
 
