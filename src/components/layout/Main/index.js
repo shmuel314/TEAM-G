@@ -1,10 +1,15 @@
 import Test from "../../test/Test";
-import Header from "../header";
+import Header from "../Header";
 import Nav from "../Nav";
-import Popup from "../popup/Popup";
+import Popup from "../Popup/Popup";
 import { Outlet, Route, Routes } from "react-router-dom"
-import TextArea from "../common/TextArea/Index";
-import Context from "../../../context";
+// import TextArea from "../common/TextArea/Index";
+
+import Exercise from "../../../pages/TrainReading/Level/Exercise"
+import ExerciseClock from "../../../pages/TrainReading/Level/ExerciseClock"
+import ExerciseQuestion from "../../../pages/TrainReading/Level/ExerciseQuestion"
+import ExerciseRate from "../../../pages/TrainReading/Level/ExerciseRate"
+import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult"
 
 
 function Main() {
@@ -27,9 +32,13 @@ function Main() {
         </Route>
 
         {/* Team C */}
-        <Route path="teams-path">
-          <Route index element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
+        <Route path="train_reading_level">
+          {/* <Route index element={<>team's components</>} /> */}
+          <Route path="exercise" element={<Exercise/>} />
+          <Route path="exercise_clock" element={<ExerciseClock/>} />
+          <Route path="rate" element={<ExerciseRate/>} />
+          <Route path="question" element={<ExerciseQuestion/>} />
+          <Route path="result" element={<ExerciseResult/>} />
         </Route>
 
         {/* Team D */}

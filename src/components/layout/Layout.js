@@ -1,7 +1,6 @@
 import React, { createContext, useState } from 'react';
-// import Header from './header/Header';
-import Main from './main/Main';
-import Login from './login/Login';
+import Main from './Main';
+import Login from './login';
 export const pageNameContext = createContext();
 
 export default function Layout() {
