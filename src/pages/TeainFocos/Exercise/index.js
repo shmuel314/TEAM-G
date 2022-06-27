@@ -1,12 +1,11 @@
-import { useState  } from 'react'
+import { useContext} from 'react'
+import {pageNameContext} from '../../../components/layout';
 import "./style.css"
 import arow from "./arow.png"
 import {useNavigate} from 'react-router-dom'
 import SabmitBtn from '../../../components/common/SabmitBtn'
-
+const {setRoundNumber }= useContext(pageNameContext)
 function Exercise(){
-    const [RoundNumber, setRoundNumber] = useState(1)
-    const [DailyStoppingDistance, setDailyStoppingDistance] = useState(0)
     const navigate= useNavigate();
     const StoppingDistance = 3
     const side = 0

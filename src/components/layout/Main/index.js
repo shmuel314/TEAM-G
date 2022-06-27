@@ -9,13 +9,14 @@ import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
 import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
-import Exercise from "../../../pages/TrainFocos/Exercise";
+import Exercise from "../../../pages/TrainFocus/Exercise";
 //  import Popup from "./popup/Popup";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
 function Main() {
+
   return (
     <>
       {/* <Header /> */}
@@ -54,7 +55,7 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+          <Route index element={<></>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
