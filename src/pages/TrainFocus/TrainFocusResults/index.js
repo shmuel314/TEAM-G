@@ -20,7 +20,9 @@ function Results(props) {
   useEffect(() => {
     setTotalAvg((avg + dailyAvg) / (testNum + 1).toFixed(1));
   }, [dailyAvg]);
-  const updateDB = () => {};
+  const updateDB = () => {
+   console.log("fhdgfjhdf")
+  };
   return (
     <>
       <img className="image" src={image} alt="img"></img>

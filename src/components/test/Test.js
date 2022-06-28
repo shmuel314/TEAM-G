@@ -1,19 +1,15 @@
-// import CancelBtn from "../common/cancelBtn";
-// import FooterStart from "../common/FooterStart"
-
-import CalibrateCam from "../../pages/TrainFocus/CalibrateCam";
-import StartFocus from "../../pages/TrainFocus/StartFocus/StartFocus";
-import Results from "../../pages/TrainFocus/TrainFocusResults";
-import QuestionBoard from "../common/QuestionBoard";
-import Questions from "../common/Questions";
+// import { NavBar } from "../Common/Nav/index";
 
 function Test() {
-    return <>
-     <CalibrateCam/>
-     {/* <Results/> */}
-     {/* <StartFocus/> */}
+  return (
+    <>
+    lllkl
+      {/* <Options /> */}
+      {/* <Nav /> */}
     </>
-  ;
+  );
 }
-
-    export default Test
+// function bbb() {
+//   alert("nrjnfrj");
+// }
+export default Test;
