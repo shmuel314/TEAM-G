@@ -13,13 +13,16 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
 function Exercise(){
     const {RoundNumber, setDailyStoppingDistance,DailyStoppingDistance }= useContext(pageNameContext)
     const StoppingDistance = 3
-    const side = 0
+    const side = 1
     
         function Round(){
-            if(RoundNumber>4){
+            if(RoundNumber===5){
+                setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
                 setDailyStoppingDistance(DailyStoppingDistance/4)
+                console.log(DailyStoppingDistance);
             } 
-             else{
+            else{
+                 console.log(DailyStoppingDistance);
     setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
    }
     }
