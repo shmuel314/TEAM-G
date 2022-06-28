@@ -6,7 +6,7 @@ import SubmitBtn from '../../../components/common/SubmitBtn';
 
 
   
-// Creator : Team G - Orit F
+// Creator : Team G - Orit F  
 function CalibrateCam(){
     const halfImgWidth = 50
     const rightMargin = halfImgWidth-20
@@ -56,7 +56,6 @@ function CalibrateCam(){
 
   const onClickBtn=()=>{
     localStorage.setItem('posX', posX);
-    alert(localStorage.getItem('posX'))
     console.log("send posX to DB. current posX="+posX)
      navigate('/train-focus/StartFocus');
     //userLogic.setCalibrateCam(mobileID, posX)
