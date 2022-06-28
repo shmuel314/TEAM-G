@@ -2,7 +2,6 @@
 
     .localLook{
         margin-top: 5px;
-        left: 120px;
         display: flex;
         flex-direction: column;
        position: relative;
@@ -15,8 +14,6 @@
         height: 18px;  
         border-radius: 50%;
         background: #7D56A5;
-    
-    
 }
 
 .arrowToDot{
@@ -35,6 +32,7 @@
 .anderDotText{
     position: absolute;
     margin-top: 70px;
+    width: 30%;
 }
    
 }
