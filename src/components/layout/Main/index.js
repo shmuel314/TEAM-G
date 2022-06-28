@@ -4,14 +4,14 @@ import Nav from "../Nav";
 import Dashboard from "../../../pages/Dashboard";
 import TeamF from "../../teams/TeamF";
 // import Popup from "../Popup";
-import { Outlet, Route, Routes } from "react-router-dom"
+import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
 
-import Exercise from "../../../pages/TrainReading/Level/Exercise"
-import ExerciseClock from "../../../pages/TrainReading/Level/ExerciseClock"
-import ExerciseQuestion from "../../../pages/TrainReading/Level/ExerciseQuestion"
-import ExerciseRate from "../../../pages/TrainReading/Level/ExerciseRate"
-import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult"
+import Exercise from "../../../pages/TrainReading/Level/Exercise";
+import ExerciseClock from "../../../pages/TrainReading/Level/ExerciseClock";
+import ExerciseQuestion from "../../../pages/TrainReading/Level/ExerciseQuestion";
+import ExerciseRate from "../../../pages/TrainReading/Level/ExerciseRate";
+import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult";
 // import TeamC from '../../teams/TeamC'
 
 // import Popup from "../Popup/Popup"
@@ -26,8 +26,7 @@ import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
 function Main() {
   return (
     <>
-      <Header/>
-
+      <Header />
       content
       <Routes>
         {/* Team A */}
@@ -68,7 +67,6 @@ function Main() {
         <Route path="/teamf">
           <Route index element={<TeamF />} />
           <Route path="components-path" element={<TeamF />} />
-         
         </Route>
 
         {/* Team G */}
@@ -91,7 +89,6 @@ function Main() {
         <Route path="/test" element={<Test />} />
         <Route path="test/Dashboard" element={<Dashboard />} />
       </Routes>
-
       <Nav />
       {/* <Popup /> */}
     </>
