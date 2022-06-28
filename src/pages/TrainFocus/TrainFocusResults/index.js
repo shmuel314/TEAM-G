@@ -33,8 +33,8 @@ function Results() {
       </div>
 
       <SubmitBtn
-        className="btn"
-        path="/dashboard"
+        // className="btn"
+        path="/train-focus/StartFocus"
         name="Done"
         onclick={updateDB}
       />

@@ -16,7 +16,7 @@ function StartFocus() {
   
   function startFunction() {
     setRoundNumber(RoundNumber + 1);
-    nevigate("/train-focus/exercise")
+    nevigate("/train-focus/exercise");
   }
 
   localStorage.setItem("posX" , 200
@@ -25,7 +25,7 @@ function StartFocus() {
   return (
     <div>
       <div className="localLook"  style={{left: localStorage.getItem("posX")+'px'}}>
-        <div className="purpleDot" ></div>  
+        <div className="purpleDotDot" ></div>  
         <div className="arrowToDot"></div>
         <div className="anderDotText">
           <p>Focus on the {"\n"} point above</p>
