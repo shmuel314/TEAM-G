@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import SubmitBtn from "../../../components/common/SubmitBtn";
 import "./mosheModels.css";
 import image from "./Resuil vector.png";
-import image2 from "./Vector (1).png";
-import image4 from "./Vector (4).png";
-// import image3 from "./Vector (3).png";
-import image3 from "./Line 237 (Stroke).png";
+import image2 from "./Group 287 (1).png";
+
 import ReatingAndScore from "../../../components/common/ReatingAndScore";
 import { pageNameContext } from "../../../components/layout/Layout";
 
@@ -29,18 +27,13 @@ function Results(props) {
 
   return (
     <>
-      <img className="image" src={image} alt="img"></img>
-      <div className="rectangle1">
-        <div className="image2">
-          <img className="train-focus-mobile" src={image2}></img>
-          <img className="train-focus-arrow" src={image3}></img>
-          <div className="train-focus-person">
-            <span className="train-focus-circle"></span>
-            <img src={image4}></img>
-          </div>
+      <img className="train-focus-result-image" src={image} alt="img"></img>
+      <div className="train-focus-rectangle1">
+        <div className="train-focus-image2">
+          <img src={image2}></img>
         </div>
-        <h5 className="text">Comfortable Reading</h5>
-        <span className="avg">
+        <h5 className="train-focus-text">Comfortable Reading</h5>
+        <span className="train-focus-avg">
           <b>{totalAvg} cm</b>
         </span>
       </div>
