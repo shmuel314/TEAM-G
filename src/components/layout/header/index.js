@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 import { useContext, useState } from 'react';
 import { pageNameContext } from '../Layout';
 import nav from './img/nav-icon.png';
 import photoPic from './img/userPhoto.png';
 import "./header.css"
+=======
+import { useContext, useState } from "react";
+import { pageNameContext, navBarContext } from "../Layout";
+import nav from "./img/nav-icon.png";
+import { NavBar } from "../../common/Nav/index.js";
+>>>>>>> 697004526cc49b4bd215dcfae52aefc2cdb498b7
 
 //group c- yoav & yehoshua 
 
