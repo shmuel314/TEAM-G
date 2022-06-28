@@ -1,5 +1,6 @@
+import styles from './style.module.css'
 import UseRedirectValidation from "../../hooks/useRedirectValidation"
-
+import dashboard from "../../assets/img/dashboard icons/dashboard.jpeg"
 
 
 // Creator : Team F - Asael
@@ -11,6 +12,9 @@ function Dashboard() {
 
     return (<div>
         Dashboard
+        <div className={`${styles.dashboardPhoto}`}>
+            <img src={dashboard} alt="dashboardPhoto" />
+         </div>
     </div>
     )
 }

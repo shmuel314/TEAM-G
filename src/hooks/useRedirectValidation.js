@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 // MOCK FETCH
 const myFetch = (url) => {
-    url = false // testing var
+    url = true // testing var
     return url
     // צריך להתאים ל fatch כשנדע איך לקבל את הנתונים
     // Promise((resolve, reject) => {

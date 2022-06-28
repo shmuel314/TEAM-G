@@ -1,13 +1,13 @@
 // import { NavBar } from "../Common/Nav/index";
 import Dashboard from "../../pages/Dashboard";
-// import TeamF from "../teams/TeamF";
+import TeamF from "../teams/TeamF";
 function Test() {
   return (
     <>
-      {/* <TeamF /> */}
+      <TeamF />
       {/* <Options /> */}
       {/* <Nav /> */}
-      <Dashboard />
+      {/* <Dashboard /> */}
     </>
   );
 }
