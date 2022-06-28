@@ -1,9 +1,9 @@
 import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
+import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 // import Popup from "../Popup/Popup"
 import {  Route, Routes } from "react-router-dom"
-import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
@@ -64,6 +64,7 @@ function Main() {
           <Route path="exercise" element={<Exercise/>} />
           <Route path="StartFocus" element={<StartFocus/>} />
           <Route path="result" element={<Results/>} />
+          <Route path="CalibrateCam" element={<CalibrateCam/>} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
