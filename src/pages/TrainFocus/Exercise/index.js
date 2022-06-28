@@ -27,6 +27,7 @@ function Exercise(){
     switch(side){
         case 0:
       return <>
+      <div className="purpleDot"></div>
       <div className="bo">
         <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
         </div>
@@ -34,6 +35,7 @@ function Exercise(){
      break;
      case 1:
         return <>
+        <div className="purpleDot"></div>
         <div className="back_center_Left"> <div className="text_box">Move the phone a bit to the left so the dot is in your center</div> 
         <img  className="flip_img_left"src={arow} alt="img"/></div> 
         <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
@@ -41,6 +43,7 @@ function Exercise(){
        break;
        case -1:
         return <>
+        <div className="purpleDot"></div>
             <div className="back_center_Right"> <div className="text_box">Move the phone a bit to the right so the dot is in your center</div>
             <img  className="flip_img_right"src={arow} alt="img"/></div>
             <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>

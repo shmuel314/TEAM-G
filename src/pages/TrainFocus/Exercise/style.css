@@ -59,3 +59,10 @@
     font-size: 101%;
     color: #252525;
 }
+.purpleDot{
+    width: 18px;
+    height: 18px;  
+    border-radius: 50%;
+    background: #7D56A5;
+    margin: 5%;
+}
