@@ -11,13 +11,17 @@ import { pageNameContext } from "../../../components/layout/Layout";
 function Results() {
   // const [setPageName] = useContext(pageNameContext)}
   // setPageName("Result Summary");
-  const { DailyStoppingDistance, setDailyStoppingDistance, setRoundNumber } =
+  const { DailyStoppingDistance, setDailyStoppingDistance, setRoundNumber,setPageName } =
     useContext(pageNameContext);
   const updateDB = () => {
     console.log("fhdgfjhdf");
     setDailyStoppingDistance(0);
     setRoundNumber(1);
   };
+
+  useEffect(()=>{
+    setPageName("summary result")
+  },[])
 
   return (
     <>

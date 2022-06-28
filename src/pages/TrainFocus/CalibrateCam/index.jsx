@@ -9,8 +9,8 @@ import SubmitBtn from '../../../components/common/SubmitBtn';
 // Creator : Team G - Orit F  
 function CalibrateCam(){
     const halfImgWidth = 50
-    const rightMargin = halfImgWidth-20
-    const leftMargin = halfImgWidth+20
+    const rightMargin = halfImgWidth-30
+    const leftMargin = halfImgWidth+30
     //const userLogic = require('../BL/userBL')
   // const dragItem = useRef()
   const [posX, setPosX] = useState(window.innerWidth/2-halfImgWidth);

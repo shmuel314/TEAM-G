@@ -15,13 +15,13 @@ import Exercise from "../../../pages/TrainFocus/Exercise";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 import Popup from "../Popup";
-// import { Outlet, Route, Routes } from "react-router-dom";
+import Header from "../header"
 import TeamF from "../../teams/TeamF";
 
 function Main() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       content
       <Routes>
         {/* Team A */}
