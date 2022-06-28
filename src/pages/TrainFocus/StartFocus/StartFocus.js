@@ -1,8 +1,11 @@
+
+
+
 import FooterStart from "../../../components/common/FooterStart";
 import "./style.css";
-// import Frame from "../../../assets/img/logo/Frame.png"
-import UmooveApi from '../../../components/api/UmooveApi'
-import { useEffect } from "react";
+import Frame from "../../../assets/img/logo/Frame.png";
+import { useContext, useState } from "react";
+import { pageNameContext } from "../../../components/layout/Layout.js";
 
 function StartFocus() {
   const { RoundNumber, setRoundNumber } = useContext(pageNameContext);
@@ -10,16 +13,7 @@ function StartFocus() {
   const title = `START ROUND ${RoundNumber}/4`;
   const explanation =
     "Starting from arms length, press play and then slowly bring device towards your nose. When it starts to feel uncomfortable or you see more than one dot click stop";
-  function startFunction() {
-    console.log("start");
-  };
-    const route = "/train-focus/exercise"
-    // useEffect(()=>{
-    //  setStream(UmooveApi.API_getUmooveStream());
-    //   UmooveApi.API_loadUmooveLibrary().then((stream)=>{
-    //     //setStream(stream)
-    //   }).catch((e)=>{console.error(e)})
-    // })
+  const route = "/train-focus/exercise";
 
   function startFunction() {
     setRoundNumber(RoundNumber + 1);
@@ -47,5 +41,3 @@ function StartFocus() {
 }
 
 export default StartFocus;
-
-// style={{left: posX+'px'}}
