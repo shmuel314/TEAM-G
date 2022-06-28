@@ -4,7 +4,7 @@ export default function SubmitBtn({ path="", name,type, click=()=>{}}) {
   return (
     // creator : nehorai
     // team f 
-    // enter the path with / and enter the function without ()
+    // enter the path with /
     // you must have function!! not a code 
       <Link to={path}>
         <button className="submit" type={type}  onClick={(e) => click(e)}>
