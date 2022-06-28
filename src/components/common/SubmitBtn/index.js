@@ -10,6 +10,6 @@ export default function SubmitBtn({ path, name, onclick }) {
           <div className="word">{name}</div>
         </div>
       </Link>
-    </div>
+    </div>  
   );
 }

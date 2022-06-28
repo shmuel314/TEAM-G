@@ -1,6 +1,8 @@
 import FooterStart from "../../../components/common/FooterStart";
 import "./style.css";
 import Frame from "../../../assets/img/logo/Frame.png"
+import UmooveApi from '../../../components/api/UmooveApi'
+import { useEffect } from "react";
 
 function StartFocus() {
   let roundNum = 1;
@@ -11,6 +13,12 @@ function StartFocus() {
     console.log("start");
   };
     const route = "/train-focus/exercise"
+    // useEffect(()=>{
+    //  setStream(UmooveApi.API_getUmooveStream());
+    //   UmooveApi.API_loadUmooveLibrary().then((stream)=>{
+    //     //setStream(stream)
+    //   }).catch((e)=>{console.error(e)})
+    // })
 
 
   return (
