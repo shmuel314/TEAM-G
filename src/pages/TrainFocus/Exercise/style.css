@@ -60,9 +60,11 @@
     color: #252525;
 }
 .purpleDot{
+    position: absolute;
+    margin-top: 5px;
     width: 18px;
     height: 18px;  
     border-radius: 50%;
     background: #7D56A5;
-    margin: 5%;
+    
 }
