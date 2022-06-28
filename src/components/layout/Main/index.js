@@ -14,9 +14,11 @@ import Exercise from "../../../pages/TrainFocus/Exercise";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
+import Popup from "../Popup";
+import { Outlet, Route, Routes } from "react-router-dom";
+import TeamF from "../../teams/TeamF";
 
 function Main() {
-
   return (
     <>
       <Header />
@@ -54,9 +56,9 @@ function Main() {
         </Route>
 
         {/* Team F */}
-        <Route path="teams-path">
-          <Route index element={<></>} />
-          <Route path="components-path" element={<>team's components</>} />
+        <Route path="/teamf">
+          <Route index element={<TeamF />} />
+          <Route path="components-path" element={<TeamF />} />
         </Route>
 
         {/* Team G */}
