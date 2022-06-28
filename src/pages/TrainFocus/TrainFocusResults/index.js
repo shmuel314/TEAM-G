@@ -8,29 +8,35 @@ import image4 from "./Vector (4).png";
 // import image3 from "./Vector (3).png";
 import image3 from "./Line 237 (Stroke).png";
 import ReatingAndScore from "../../../components/common/ReatingAndScore";
+import { pageNameContext } from "../../../components/layout/Layout";
 
 // Creator : Team G - Shmuel
 function Results(props) {
   // const [setPageName] = useContext(pageNameContext)}
   // setPageName("Result Summary");
   const avg = 9;
-  const dailyAvg = 12;
+  const { DailyStoppingDistance, setDailyStoppingDistance } =
+    useContext(pageNameContext);
   const testNum = 5;
   const [totalAvg, setTotalAvg] = useState();
   useEffect(() => {
-    setTotalAvg((avg + dailyAvg) / (testNum + 1).toFixed(1));
-  }, [dailyAvg]);
-  const updateDB = () => {};
+    setTotalAvg(((avg + DailyStoppingDistance) / (testNum + 1)).toFixed(1));
+  }, [DailyStoppingDistance]);
+  const updateDB = () => {
+    console.log("fhdgfjhdf");
+    setDailyStoppingDistance(0);
+  };
+
   return (
     <>
       <img className="image" src={image} alt="img"></img>
       <div className="rectangle1">
         <div className="image2">
-          <img src={image2} height="25%"></img>
-          <img src={image3} width="30%" height="15%"></img>
-          <div className="person">
-            <span className="circle"></span>
-            <img src={image4} height="40%"></img>
+          <img className="train-focus-mobile" src={image2}></img>
+          <img className="train-focus-arrow" src={image3}></img>
+          <div className="train-focus-person">
+            <span className="train-focus-circle"></span>
+            <img src={image4}></img>
           </div>
         </div>
         <h5 className="text">Comfortable Reading</h5>
@@ -38,9 +44,13 @@ function Results(props) {
           <b>{totalAvg} cm</b>
         </span>
       </div>
-      <Link to="student/exercise">
-        <SubmitBtn className="btn" onClick={updateDB} />
-      </Link>
+
+      <SubmitBtn
+        className="btn"
+        path="/train-focus/CalibrateCam"
+        name="Done"
+        onclick={updateDB}
+      />
     </>
   );
 }

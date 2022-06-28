@@ -9,7 +9,7 @@ import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
 import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
-import Exercise from "../../../pages/TrainFocos/Exercise";
+import Exercise from "../../../pages/TrainFocus/Exercise";
 //  import Popup from "./popup/Popup";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
@@ -53,7 +53,7 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+          <Route index element={<></>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
@@ -63,6 +63,7 @@ function Main() {
           <Route path="exercise" element={<Exercise />} />
           <Route path="StartFocus" element={<StartFocus />} />
           <Route path="result" element={<Results />} />
+          <Route path="CalibrateCam" element={<CalibrateCam />} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 

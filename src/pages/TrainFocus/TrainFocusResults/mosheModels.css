@@ -3,12 +3,12 @@
     width: 70%;
     height: 50%;
     margin-left: 20%;
-    margin-top: 25%;
+    margin-top: 35%;
   }
 
   .text {
     width: 75%;
-    height: 20px;
+    height: 10%;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -17,22 +17,19 @@
     text-align: center;
     color: #252525;
   }
-  .btn {
+  /* .btn {
     height: 30px;
     width: 50%;
     position: fixed !important;
     margin-top: 20%;
     top: 85% !important;
     left: 35% !important;
-  }
+  } */
   .rectangle1 {
     box-sizing: border-box;
-
-    position: absolute;
-    width: 382px;
-    height: 135px;
-    left: 1%;
-    top: 70%;
+    margin-top: 20%;
+    width: 99%;
+    height: 15%;
     background: #eed4ec;
     border: 1.5px solid #252525;
     border-radius: 20px;
@@ -46,28 +43,41 @@
   .avg {
     color: purple;
   }
-  .circle {
-    height: 7px;
-    width: 7px;
+  .train-focus-circle {
+    height: 0.8vh;
+    width: 55%;
     border-radius: 50%;
     /* display: inline-block; */
     background-color: #eed4ec;
     border: 1px solid black;
-    /* position: absolute; */
-    /* top: 1%; */
+    margin-top: 25%;
+    margin-left: 25%;
   }
   .image2 {
     display: flex;
     flex-direction: row;
-    gap: 10%;
-    position: absolute;
+    gap: 3%;
+    margin-left: 2%;
+    margin-top: 2%;
+    /* position: absolute;
     top: 10%;
-    left: 35%;
+    left: 35%; */
   }
-  .person {
+  .train-focus-person {
     display: flex;
     flex-direction: column;
-    gap: 5%;
-    align-items: center;
+    /* gap: 0.2%; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2%;
+  }
+  .train-focus-mobile {
+    height: 15%;
+    margin-top: 0%;
+  }
+  .train-focus-arrow {
+    width: 30%;
+    height: 15%;
+    margin-top: 12%;
   }
 }
