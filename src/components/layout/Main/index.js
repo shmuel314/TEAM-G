@@ -1,8 +1,8 @@
 import Test from "../../test/Test";
-import Header from "../header";
+// import Header from "../Header";
 import Nav from "../Nav";
 // import Popup from "../Popup/Popup"
-import {  Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
@@ -14,18 +14,19 @@ import Exercise from "../../../pages/TrainFocus/Exercise";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
+import Popup from "../Popup";
+// import { Outlet, Route, Routes } from "react-router-dom";
+import TeamF from "../../teams/TeamF";
 
 function Main() {
-
   return (
     <>
       {/* <Header /> */}
-
       content
       <Routes>
         {/* Team A */}
-        <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+        <Route path="teama">
+          <Route index element={<>ghdsf</>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
@@ -36,9 +37,13 @@ function Main() {
         </Route>
 
         {/* Team C */}
-        <Route path="teams-path">
-          <Route index element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
+        <Route path="train_reading_level">
+          {/* <Route index element={<>team's components</>} /> */}
+          {/* <Route path="exercise" element={<Exercise/>} />
+          <Route path="exercise_clock" element={<ExerciseClock/>} />
+          <Route path="rate" element={<ExerciseRate/>} />
+          <Route path="question" element={<ExerciseQuestion/>} />
+          <Route path="result" element={<ExerciseResult/>} /> */}
         </Route>
 
         {/* Team D */}
@@ -54,9 +59,9 @@ function Main() {
         </Route>
 
         {/* Team F */}
-        <Route path="teams-path">
-          <Route index element={<></>} />
-          <Route path="components-path" element={<>team's components</>} />
+        <Route path="/teamf">
+          <Route index element={<TeamF />} />
+          <Route path="components-path" element={<TeamF />} />
         </Route>
 
         {/* Team G */}
@@ -65,7 +70,7 @@ function Main() {
           <Route path="exercise" element={<Exercise/>} />
           <Route path="StartFocus" element={<StartFocus/>} />
           <Route path="result" element={<Results/>} />
-          <Route path="CalibrateCam" element={<CalibrateCam/>} />
+          <Route path="calibration" element={<CalibrateCam/>} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
@@ -78,7 +83,6 @@ function Main() {
         {/* Test */}
         <Route path="/test" element={<Test />} />
       </Routes>
-
       <Nav />
       {/* <Popup /> */}
     </>

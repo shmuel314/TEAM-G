@@ -1,3 +1,7 @@
+
+
+
+
 import { useContext, useState} from 'react'
 import {pageNameContext} from "../../../components/layout/Layout.js"
 import "./style.css"
@@ -8,19 +12,18 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
 
 function Exercise(){
     const {RoundNumber, setDailyStoppingDistance,DailyStoppingDistance }= useContext(pageNameContext)
-    const navigate= useNavigate();
     const StoppingDistance = 3
     const side = 1
     
-    
         function Round(){
-            if(RoundNumber===4){
+            if(RoundNumber===5){
+                setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
                 setDailyStoppingDistance(DailyStoppingDistance/4)
-                navigate('/train-focus/result', {RoundNumber})
+                console.log(DailyStoppingDistance);
             } 
-             else{
+            else{
+                 console.log(DailyStoppingDistance);
     setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
-    navigate('/train-focus/StartFocus')
    }
     }
     
@@ -29,7 +32,7 @@ function Exercise(){
       return <>
       <div className="purpleDot"></div>
       <div className="bo">
-        <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
+        <SabmitBtn name="stop" path={RoundNumber<5? '/train-focus/StartFocus': '/train-focus/result'} onclick={Round}/>
         </div>
      </>
      break;
@@ -38,7 +41,7 @@ function Exercise(){
         <div className="purpleDot"></div>
         <div className="back_center_Left"> <div className="text_box">Move the phone a bit to the left so the dot is in your center</div> 
         <img  className="flip_img_left"src={arow} alt="img"/></div> 
-        <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
+        <SabmitBtn name="stop" path={RoundNumber<5? '/train-focus/StartFocus': '/train-focus/result'} onclick={Round}/>
         </>
        break;
        case -1:
@@ -46,7 +49,7 @@ function Exercise(){
         <div className="purpleDot"></div>
             <div className="back_center_Right"> <div className="text_box">Move the phone a bit to the right so the dot is in your center</div>
             <img  className="flip_img_right"src={arow} alt="img"/></div>
-            <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
+            <SabmitBtn name="stop" path={RoundNumber<5? '/train-focus/StartFocus': '/train-focus/result'} onclick={Round}/>
            </>
        break;
        default:
@@ -59,8 +62,3 @@ function Exercise(){
     }
 
     export default Exercise
-
-
-
-
- 

@@ -1,15 +1,18 @@
-// import { NavBar } from "../Common/Nav/index";
+import CalibrateCam from "../../pages/TrainFocus/CalibrateCam";
+import StartFocus from "../../pages/TrainFocus/StartFocus/StartFocus";
+import Results from "../../pages/TrainFocus/TrainFocusResults";
 
 function Test() {
   return (
     <>
-    lllkl
-      {/* <Options /> */}
-      {/* <Nav /> */}
+      <CalibrateCam/>
+      {/* <Results/> */}
+      {/* <StartFocus/> */}
     </>
-  );
+  )
 }
-// function bbb() {
-//   alert("nrjnfrj");
-// }
+
+
+
+
 export default Test;
