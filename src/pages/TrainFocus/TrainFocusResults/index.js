@@ -40,9 +40,9 @@ function Results(props) {
           <b>{totalAvg} </b>
         </span>
       </div>
-      <Link to="student/exercise">
-        <SubmitBtn className="btn" onClick={updateDB} />
-      </Link>
+     
+        <SubmitBtn className="btn" path="/train-focus/calibration" name = "Done"  onclick={updateDB} />
+     
     </>
   );
 }

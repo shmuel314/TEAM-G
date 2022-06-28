@@ -6,19 +6,7 @@
     left: 20%;
     top: 20%;
   }
-  .rectangle {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 382px;
-    height: 135px;
-    left: 16px;
-    top: 70%;
-
-    background: #feefec;
-    border: 1.5px solid #252525;
-    border-radius: 20px;
-  }
+  
   .train-focus-result-box {
     display: flex;
     flex-direction: column;
