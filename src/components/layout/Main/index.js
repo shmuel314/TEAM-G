@@ -9,7 +9,7 @@ import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
 import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
-import Exercise from "../../../pages/TrainFocus/Exercise";
+// import Exercise from "../../../pages/TrainFocus/Exercise";
 //  import Popup from "./popup/Popup";
 // import { Outlet, Route, Routes } from "react-router-dom";
 // import TextArea from "../common/TextArea/Index";
@@ -60,24 +60,25 @@ function Main() {
 
         {/* Team F */}
         <Route path="/teamf">
-          <Route index element={<TeamF />} />
-          <Route path="components-path" element={<TeamF />} />
+          {/* <Route index element={<TeamF />} /> */}
+          {/* <Route path="components-path" element={<TeamF />} /> */}
         </Route>
 
         {/* Team G */}
         <Route path="/train-focus">
           <Route index element={<>team's components</>} />
-          <Route path="exercise" element={<Exercise/>} />
-          <Route path="StartFocus" element={<StartFocus/>} />
-          <Route path="result" element={<Results/>} />
-          <Route path="calibration" element={<CalibrateCam/>} />
+          <Route path="exercise" element={<Exercise />} />
+          <Route path="StartFocus" element={<StartFocus />} />
+          <Route path="result" element={<Results />} />
+          <Route path="calibration" element={<CalibrateCam />} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
         {/* Team H */}
-        <Route path="teams-path">
-          <Route index element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
+        <Route path="/teams/TeamH">
+          <Route index element={<TeamH />} />
+          <Route path="/teams/TeamH/Training" element={<Training />} />
+          {/* <Route path="components-path" element={<>team's components</>} /> */}
         </Route>
 
         {/* Test */}

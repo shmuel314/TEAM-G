@@ -1,6 +1,3 @@
-
-
-
 import FooterStart from "../../../components/common/FooterStart";
 import "./style.css";
 import Frame from "../../../assets/img/logo/Frame.png";
