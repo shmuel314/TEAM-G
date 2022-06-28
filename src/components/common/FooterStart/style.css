@@ -2,7 +2,7 @@
     
 
 
-    .bottomStart{
+    .myBottomStart{
        display: flex;
        justify-content: center;
     }
@@ -23,7 +23,7 @@
        align-items: center;
     }
     
-    .startBtn{
+    .startBtnFocous{
         z-index: 10;
         box-sizing: border-box;
         border-radius: 50%;
@@ -37,7 +37,7 @@
     }
     
     
-    .play{
+    .playTriangle{
         z-index: 11;
         box-sizing: border-box;
         position: absolute;
@@ -46,7 +46,7 @@
       border-left: 22px solid #FFFFFF;
       }
     
-    .box{
+    .footer-start-box{
         bottom: 0%;
         left: 0%;
         width: 100%;

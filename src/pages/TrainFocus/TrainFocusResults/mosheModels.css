@@ -1,28 +1,13 @@
 @media screen and (max-width: 600px) {
   .image {
-    position: absolute;
     width: 70%;
     height: 50%;
-    left: 20%;
-    top: 20%;
+    margin-left: 20%;
+    margin-top: 25%;
   }
 
-  .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 4px;
-
-    position: absolute;
-    width: 167px;
-    height: 93px;
-    left: 124px;
-    top: 15%;
-  }
   .text {
-    width: 167px;
+    width: 75%;
     height: 20px;
     font-family: "Poppins";
     font-style: normal;
