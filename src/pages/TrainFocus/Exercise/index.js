@@ -1,7 +1,4 @@
-
-
-
-
+import UmooveApi from "../../../components/api/UmooveApi";
 import { useContext, useState} from 'react'
 import {pageNameContext} from "../../../components/layout/Layout.js"
 import "./style.css"
@@ -11,6 +8,9 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
 
 
 function Exercise(){
+    UmooveApi.API_loadUmooveLibrary().then(()=>{
+    }).catch((error)=>{console.error(error)})
+    UmooveApi.API_startUmoove()
     const {RoundNumber, setDailyStoppingDistance,DailyStoppingDistance }= useContext(pageNameContext)
     const StoppingDistance = 3
     const side = 1
@@ -19,9 +19,10 @@ function Exercise(){
             if(RoundNumber===5){
                 setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
                 setDailyStoppingDistance(DailyStoppingDistance/4)
-                console.log(DailyStoppingDistance);
+                console.log(UmooveApi.API_getDistance());
             } 
             else{
+                console.log(UmooveApi.API_getDistance());
                  console.log(DailyStoppingDistance);
     setDailyStoppingDistance(DailyStoppingDistance+StoppingDistance)
    }
