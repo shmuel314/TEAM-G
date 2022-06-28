@@ -12,13 +12,27 @@ import ExerciseRate from "../../../pages/TrainReading/Level/ExerciseRate"
 import ExerciseResult from "../../../pages/TrainReading/Level/ExerciseResult"
 // import TeamC from '../../teams/TeamC'
 
+// import Popup from "../Popup/Popup"
+import {  Route, Routes } from "react-router-dom"
+import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
+// import TextArea from "../common/TextArea/Index";
+// import Context from "../../../context";
+
+import Results from "../../../pages/TrainFocus/TrainFocusResults";
+import StartFocus from "../../../pages/TrainFocus/StartFocus/StartFocus";
+import Exercise from "../../../pages/TrainFocus/Exercise";
+//  import Popup from "./popup/Popup";
+// import { Outlet, Route, Routes } from "react-router-dom";
+// import TextArea from "../common/TextArea/Index";
+// import Context from "../../../context";
 
 function Main() {
+
   return (
     <>
       <Header/>
 
-      {/* content */}
+      content
       <Routes>
         {/* Team A */}
         <Route path="teama">
@@ -56,14 +70,18 @@ function Main() {
 
         {/* Team F */}
         <Route path="teams-path">
-          <Route index element={<>team's components</>} />
+          <Route index element={<></>} />
           <Route path="components-path" element={<>team's components</>} />
         </Route>
 
         {/* Team G */}
-        <Route path="teams-path">
+        <Route path="/train-focus">
           <Route index element={<>team's components</>} />
-          <Route path="components-path" element={<>team's components</>} />
+          <Route path="exercise" element={<Exercise/>} />
+          <Route path="StartFocus" element={<StartFocus/>} />
+          <Route path="result" element={<Results/>} />
+          <Route path="calibration" element={<CalibrateCam/>} />
+          {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
         {/* Team H */}
@@ -81,5 +99,4 @@ function Main() {
     </>
   );
 }
-
 export default Main;
