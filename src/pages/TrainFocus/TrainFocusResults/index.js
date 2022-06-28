@@ -11,12 +11,13 @@ import { pageNameContext } from "../../../components/layout/Layout";
 function Results() {
   // const [setPageName] = useContext(pageNameContext)}
   // setPageName("Result Summary");
-  const { DailyStoppingDistance, setDailyStoppingDistance } =
+  const { DailyStoppingDistance, setDailyStoppingDistance, setRoundNumber } =
     useContext(pageNameContext);
 
   const updateDB = () => {
     console.log("fhdgfjhdf");
     setDailyStoppingDistance(0);
+    setRoundNumber(1);
   };
 
   return (
@@ -34,7 +35,7 @@ function Results() {
 
       <SubmitBtn
         className="btn"
-        path="/train-focus/CalibrateCam"
+        path="/dashboard"
         name="Done"
         onclick={updateDB}
       />
