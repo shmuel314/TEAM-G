@@ -2,13 +2,15 @@ import { useState  } from 'react'
 import "./style.css"
 import arow from "./arow.png"
 import {useNavigate} from 'react-router-dom'
+import SabmitBtn from '../../../components/common/SubmitBtn'
+
 
 function Exercise(){
     const [RoundNumber, setRoundNumber] = useState(1)
     const [DailyStoppingDistance, setDailyStoppingDistance] = useState(0)
     const navigate= useNavigate();
     const StoppingDistance = 3
-    const side = 1
+    const side = 0
     
     
         function Round(){
@@ -26,7 +28,10 @@ function Exercise(){
     switch(side){
         case 0:
       return <>
-          <button className= "button" onClick={Round}>stop</button>
+      <div className="bo">
+        <SabmitBtn name="stop" path="/train-focus/StartFocus" onclick={Round}/>
+        </div>
+          {/* <button className= "button" onClick={Round}>stop</button> */}
      </>
      break;
      case 1:
