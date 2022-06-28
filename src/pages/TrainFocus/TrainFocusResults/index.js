@@ -20,7 +20,6 @@ function Results(props) {
   const testNum = 5;
   const [totalAvg, setTotalAvg] = useState();
   useEffect(() => {
-    // setTotalAvg(((avg + DailyStoppingDistance) / (testNum + 1)).toFixed(1));
     setTotalAvg(DailyStoppingDistance) 
   }, [DailyStoppingDistance]);
   const updateDB = () => {
