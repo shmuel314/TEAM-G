@@ -39,4 +39,31 @@ function FooterStart(props) {
   );
 }
 
+// function FooterStart(props) {
+//   return (
+//     <div className="myAreaBtnStart">      <div className="footer-start-box">
+
+//       <div className="outBtn">
+//         <button className="startOrengeBtn" onClick={props.startFunction}>
+//           <div className="playTriangle"></div>
+//         </button>
+//       </div>
+//         <div className="startTitle">{props.title}</div>
+//         <div className="explanation">
+//           {props.subtitle ? (
+//             <p>
+//               <b>{props.subtitle}</b>
+//             </p>
+//           ) : null}
+//           <p>{props.explanation}</p>
+//         </div>
+//         <div className="myEmojiDiv">
+//           <img src={props.img} className="leftEmoji" alt="" />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
 export default FooterStart;

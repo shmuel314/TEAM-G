@@ -10,7 +10,7 @@ export default function Layout() {
     const [pageName, setPageName] = useState("||||| default page name |||||");
     const [userLoginInfo,setUserLoginInfo] = useState([])
     const [RoundNumber, setRoundNumber] = useState(1)
-    const [DailyStoppingDistance, setDailyStoppingDistance] = useState(3)
+    const [DailyStoppingDistance, setDailyStoppingDistance] = useState(0)
 
     // user information is pushed through props to Main, while its state is pushed to Login.
     // This way, when a user performs login, a state is changed and the relevant area is rendered.
