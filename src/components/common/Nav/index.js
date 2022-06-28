@@ -6,14 +6,12 @@ import { MdLogout } from "react-icons/md";
 import { FaRegAddressBook } from "react-icons/fa";
 import { NavButton } from "../NavButton/NavButton";
 
-
 import { NavHead } from "../NavHead";
 
-export const NavBar = () => {
+export const NavBar = (props) => {
   return (
     <div className={`${styles.box}`}>
-      
-      <NavHead />
+      <NavHead setClose={props.setClose} />
       <ul>
         <li className={`${styles.btn}`}>
           <NavButton
