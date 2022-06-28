@@ -1,9 +1,9 @@
-import Test from "../../test/Test";
 import Header from "../header";
 import Nav from "../Nav";
-import Popup from "../Popup";
+// import Popup from "../Popup";
 import { Outlet, Route, Routes } from "react-router-dom";
 import TeamF from "../../teams/TeamF";
+import Test from "../../test/Test";
 
 function Main() {
   return (

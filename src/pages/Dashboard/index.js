@@ -1,12 +1,18 @@
+import UseRedirectValidation from "../../hooks/useRedirectValidation"
+
 
 
 // Creator : Team F - Asael
 
 
 function Dashboard() {
-    const [data, loading] = useRedirectValidation("url", "navto")
-    return
+    const res = UseRedirectValidation("url", "navto") // hook for check if user did test
 
+
+    return (<div>
+        Dashboard
+    </div>
+    )
 }
 
 
