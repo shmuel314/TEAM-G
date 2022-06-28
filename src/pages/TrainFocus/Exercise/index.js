@@ -9,6 +9,12 @@ import arow from "./arow.png"
 import {useNavigate} from 'react-router-dom'
 import SabmitBtn from '../../../components/common/SubmitBtn'
 
+function Exercise() {
+  const { RoundNumber, setDailyStoppingDistance, DailyStoppingDistance } =
+    useContext(pageNameContext);
+  const navigate = useNavigate();
+  const StoppingDistance = 3;
+  const side = 1;
 
 function Exercise(){
     const {RoundNumber, setDailyStoppingDistance,DailyStoppingDistance }= useContext(pageNameContext)
@@ -58,7 +64,7 @@ function Exercise(){
     }
     
     
-       
+  } 
     }
 
     export default Exercise

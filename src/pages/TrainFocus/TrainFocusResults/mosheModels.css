@@ -5,7 +5,8 @@
     margin-left: 20%;
     margin-top: 35%;
   }
-  .text {
+
+  .train-focus-text {
     width: 75%;
     height: 10%;
     font-family: "Poppins";
@@ -24,7 +25,7 @@
     top: 85% !important;
     left: 35% !important;
   } */
-  .rectangle1 {
+  .train-focus-rectangle1 {
     box-sizing: border-box;
     margin-top: 20%;
     width: 99%;
@@ -39,20 +40,11 @@
     align-items: center;
     /* transform: rotate(2.46deg); */
   }
-  .avg {
+  .train-focus-avg {
     color: purple;
   }
-  .train-focus-circle {
-    height: 0.8vh;
-    width: 55%;
-    border-radius: 50%;
-    /* display: inline-block; */
-    background-color: #eed4ec;
-    border: 1px solid black;
-    margin-top: 25%;
-    margin-left: 25%;
-  }
-  .image2 {
+
+  .train-focus-image2 {
     display: flex;
     flex-direction: row;
     gap: 3%;
@@ -61,22 +53,5 @@
     /* position: absolute;
     top: 10%;
     left: 35%; */
-  }
-  .train-focus-person {
-    display: flex;
-    flex-direction: column;
-    /* gap: 0.2%; */
-    /* align-items: center; */
-    justify-content: center;
-    padding: 2%;
-  }
-  .train-focus-mobile {
-    height: 15%;
-    margin-top: 0%;
-  }
-  .train-focus-arrow {
-    width: 30%;
-    height: 15%;
-    margin-top: 12%;
   }
 }
