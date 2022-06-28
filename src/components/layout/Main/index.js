@@ -19,7 +19,7 @@ function Main() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       content
       <Routes>
@@ -65,6 +65,7 @@ function Main() {
           <Route path="exercise" element={<Exercise/>} />
           <Route path="StartFocus" element={<StartFocus/>} />
           <Route path="result" element={<Results/>} />
+          <Route path="CalibrateCam" element={<CalibrateCam/>} />
           {/* <Route path="/result" element={<Results />} /> */}
         </Route>
 
