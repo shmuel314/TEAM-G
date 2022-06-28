@@ -1,4 +1,4 @@
-import { NavBackButt } from "../../common/navBackButt";
+import { NavBackButt } from "../../common/NavBackButt";
 import CancelBtn from "../../common/cancelBtn";
 import DashboardBtn from "../../common/DashboardBtn";
 import TrueBtn from "../../common/trueBtn";

@@ -1,26 +1,4 @@
 @media screen {
-<<<<<<< HEAD
-
-    .frame7 {
-
-
-
-        box-sizing: border-box;
-
-        position: absolute;
-        width: 94%;
-        height: 6.5vh;
-        left: 3%;
-
-        background: #FFFFFF;
-        border: 2px solid #000000;
-        box-shadow: 2px 2px 0px #D35400;
-        border-radius: 80px;
-
-
-        position: absolute;
-        /* width: 51px;
-=======
   .frame7 {
     box-sizing: border-box;
 
@@ -40,12 +18,10 @@ top: 701px; */
 
     /* position: absolute; */
     /* width: 51px;
->>>>>>> ee610de8422e1f5136aac6735be1148cf2ec805e
 height: 16px;
 left: 182px;
 top: 718px; */
 
-<<<<<<< HEAD
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
@@ -58,17 +34,3 @@ top: 718px; */
         color: #252525;
     }
 }
-=======
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-
-    text-align: center;
-
-    color: #252525;
-  }
-}
->>>>>>> ee610de8422e1f5136aac6735be1148cf2ec805e

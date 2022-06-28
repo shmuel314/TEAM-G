@@ -1,13 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SubmitBtn from "../SubmitBtn";
-<<<<<<< HEAD
-import TextArea from "../TextArea/Index";
-import  img  from "../../../assets/img/logo/vector.png"
-=======
 import TextArea from "../TextArea";
 import img from "../../../assets/img/logo/vector.png";
->>>>>>> ee610de8422e1f5136aac6735be1148cf2ec805e
 //group c- yehoshua
 export default function Questions() {
   const [formData, setFormData] = useState({});
