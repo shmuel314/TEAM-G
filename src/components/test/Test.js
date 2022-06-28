@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-// import { NavBar } from "../Common/Nav/index";
-import TeamF from "../teams/TeamF";
+import CalibrateCam from "../../pages/TrainFocus/CalibrateCam";
+import StartFocus from "../../pages/TrainFocus/StartFocus/StartFocus";
+import Results from "../../pages/TrainFocus/TrainFocusResults";
+
 function Test() {
   return (
     <>
-      <TeamF />
-      {/* <Options /> */}
-      {/* <Nav /> */}
+      <CalibrateCam/>
+      {/* <Results/> */}
+      {/* <StartFocus/> */}
     </>
-  ;
+  )
 }
-=======
 
 
-function Test() {
-    return (<>
->>>>>>> 0531442e737c93a6c96e94e4551b49e3ba76a132
 
-    </>)
-}
+
 export default Test;
