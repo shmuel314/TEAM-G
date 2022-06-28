@@ -1,15 +1,14 @@
-
-import Settings from "../../pages/Settings";
-
-
-
-
+// import { NavBar } from "../Common/Nav/index";
+import Dashboard from "../../pages/Dashboard";
+import TeamF from "../teams/TeamF";
 function Test() {
-
-    return (<>
-
-    </>)
-
-
+  return (
+    <>
+      <TeamF />
+      {/* <Options /> */}
+      {/* <Nav /> */}
+      {/* <Dashboard /> */}
+    </>
+  );
 }
 export default Test;
