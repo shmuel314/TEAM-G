@@ -5,9 +5,9 @@ import Results from "../../pages/TrainFocus/TrainFocusResults";
 function Test() {
   return (
     <>
-      <CalibrateCam/>
+      {/* <CalibrateCam/> */}
       {/* <Results/> */}
-      {/* <StartFocus/> */}
+      <StartFocus/>
     </>
   )
 }

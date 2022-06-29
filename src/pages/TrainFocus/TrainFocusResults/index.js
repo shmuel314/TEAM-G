@@ -6,14 +6,17 @@ import image2 from "./Group 287 (1).png";
 
 import ReatingAndScore from "../../../components/common/ReatingAndScore";
 import { pageNameContext } from "../../../components/layout/Layout";
+import { useNavigate } from "react-router-dom";
 
 // Creator : Team G - Shmuel
 function Results() {
+  const navigate = useNavigate()
   // const [setPageName] = useContext(pageNameContext)}
   // setPageName("Result Summary");
   const { DailyStoppingDistance, setDailyStoppingDistance, setRoundNumber,setPageName } =
     useContext(pageNameContext);
   const updateDB = () => {
+    navigate('/train-focus/StartFocus')
     console.log("fhdgfjhdf");
     setDailyStoppingDistance(0);
     setRoundNumber(1);
@@ -37,10 +40,9 @@ function Results() {
       </div>
 
       <SubmitBtn
-        // className="btn"
-        path="/train-focus/StartFocus"
-        name="Done"
-        onclick={updateDB}
+type = "button"
+name="Done"
+        click={updateDB}
       />
     </>
   );

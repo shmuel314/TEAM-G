@@ -1,15 +1,20 @@
 import "./style.css";
 import FooterStart from "../../../components/common/FooterStart";
 import Frame from "../../../assets/img/logo/Frame.png";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import { pageNameContext } from "../../../components/layout/Layout.js";
 import UmooveApi from "../../../components/api/UmooveApi";
 import { useNavigate } from "react-router-dom";
+import Popup from "../../../components/layout/Popup";
 
 function StartFocus() {
+  const videoRef = useRef();
+  const [popup, setPopup] = useState(false);
+  const cameraPosX = localStorage.getItem("cameraPosX");
   const [mirror, setMirror] = useState("");
   const [focusIsOk, setFocusIsOk] = useState(false);
-  const { RoundNumber, setRoundNumber } = useContext(pageNameContext);
+  const { RoundNumber, setRoundNumber, setShowHeader } =
+    useContext(pageNameContext);
   const nevigate = useNavigate();
   const title = `START ROUND ${RoundNumber}/4`;
   const explanation1 =
@@ -17,15 +22,27 @@ function StartFocus() {
   const explanation2 =
     "Now while looking at the dot pull the device slowly away back to arms length. When at arms length, click start to do another round";
 
+    useEffect(()=>{
+      setShowHeader(false)
+    },[])
+
+useEffect(()=>{
+  console.log("gggg")
+  if(cameraPosX===null){
+    nevigate("/train-focus/CalibrateCam")
+    console.log("cameraPosX")
+  } else{
+    console.log("cameraPosX"+cameraPosX);
+  }
+},[])
+
   useEffect(() => {
-    UmooveApi.API_loadUmooveLibrary()
+    UmooveApi.API_loadUmooveLibrary() // 640, 480
       .then((stream) => {
-        setMirror(stream);
-        // console.log(mirror);
+        videoRef.current.srcObject = stream;
       })
       .catch((err) => {
         console.log(err);
-        // console.log(mirror);
       });
   }, []);
 
@@ -38,37 +55,49 @@ function StartFocus() {
         clearInterval(interval);
         setRoundNumber(RoundNumber + 1);
         nevigate("/train-focus/exercise");
-      } else if (count < 200) {
+      } else if (count < 50) {
         count++;
       } else {
-        alert("Look at the camera");
+        setPopup(true);
         count = 0;
+        clearInterval(interval);
       }
     }, 10);
   }
 
-  localStorage.setItem("posX", 200); // ה200 הוא פייק. לקבל משתנה מאורית
-
   return (
     <div>
-      <div
-        className="localLook"
-        style={{ left: localStorage.getItem("posX") + "px" }}
-      >
+      {/* ------------------------------------------- popup!!*/}
+      {popup === true ? (
+        <div className={`overlay ${popup ? "" : "close"}`}>
+          <div className="lookPopup ">
+            {/* <div className="backpopup"> </div> */}
+            <div className="title">I can't see you...</div>
+            <div className="txt">Look in front the camera</div>
+            <div className="btn.Popup">
+              <button className="btn_yes" onClick={() => setPopup(false)}>
+                OK
+              </button>
+              {/* <button className="btn_no" onClick={()=>{}}>
+            No
+          </button> */}
+            </div>
+          </div>
+        </div>
+      ) : null}
+      {/* ------------------------------------------- */}
+      <div className="localLook" style={{ left: cameraPosX + "px" }}>
         <div className="purpleDotDot"></div>
         <div className="arrowToDot"></div>
         <div className="anderDotText">
           <p>Focus on the {"\n"}dot above</p>
         </div>
-        <video width="320" height="240">
-          <source src={mirror} type="video/mp4"></source>
-        </video>
       </div>
-
+        <video className="focusVideo" ref={videoRef} autoPlay />
       <FooterStart
         startFunction={startFunction}
         title={title}
-        explanation={RoundNumber===1 ? explanation1 : explanation2}
+        explanation={RoundNumber === 1 ? explanation1 : explanation2}
         img={Frame}
       />
     </div>
