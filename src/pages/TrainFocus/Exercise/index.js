@@ -14,33 +14,69 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
     
     const [side,setSide] = useState(0)
     const { RoundNumber, setDailyStoppingDistance, DailyStoppingDistance } = useContext(pageNameContext)
-    const [StoppingDistance , setStoppingDistance ] = useState(0);
+    const [StoppingDistance , setStoppingDistance ] = useState([]);
 
+
+    // function Round() {
+    //   if (RoundNumber === 5) {
+    //     const distance = UmooveApi.API_getDistance()
+    //     setDailyStoppingDistance((DailyStoppingDistance + distance)/4)
+    //     // setDailyStoppingDistance(DailyStoppingDistance / 4)
+    //     UmooveApi.API_stopUmoove()
+    //     console.log(UmooveApi.API_getDistance());
+    //     console.log(DailyStoppingDistance);
+    //   }
+    //   else {
+    //     const distance = UmooveApi.API_getDistance()
+    //     const avgDistance = setInterval(()=>{
+    //       setStoppingDistance(distance)
+    //       console.log(distance);
+    //       setTimeout(()=>{
+    //         clearInterval(avgDistance)
+    //       },500)
+    //     },30)
+    //     // setStoppingDistance(UmooveApi.API_getDistance())
+    //     setDailyStoppingDistance(DailyStoppingDistance + distance)
+    //     console.log(DailyStoppingDistance);
+    //   }
+    // }
 
     function Round() {
+      const distance = UmooveApi.API_getDistance();
+      setStoppingDistance([...StoppingDistance, distance]);
       if (RoundNumber === 5) {
-        const distance = UmooveApi.API_getDistance()
-        setDailyStoppingDistance((DailyStoppingDistance + distance)/4)
+        const sum = 0;
+        const avg = DailyStoppingDistance + distance / 4;
+        const sd =
+          (Math.abs(StoppingDistance[0] - avg) +
+            Math.abs(StoppingDistance[1] - avg) +
+            Math.abs(StoppingDistance[2] - avg) +
+            Math.abs(StoppingDistance[3] - avg)) /
+          4;
+        StoppingDistance.filter((v) => Math.abs(v - avg) <= 2 * sd).forEach(
+          (v) => {
+            sum += v;
+          }
+        );
+        setDailyStoppingDistance(sum / 4);
         // setDailyStoppingDistance(DailyStoppingDistance / 4)
-        UmooveApi.API_stopUmoove()
+        UmooveApi.API_stopUmoove();
         console.log(UmooveApi.API_getDistance());
         console.log(DailyStoppingDistance);
-      }
-      else {
-        const distance = UmooveApi.API_getDistance()
-        const avgDistance = setInterval(()=>{
-          setStoppingDistance(distance)
-          console.log(distance);
-          setTimeout(()=>{
-            clearInterval(avgDistance)
-          },500)
-        },30)
+      } else {
+        // const distance = UmooveApi.API_getDistance();
+        // const avgDistance = setInterval(() => {
+        //   setStoppingDistance(distance);
+        //   console.log(distance);
+        //   setTimeout(() => {
+        //     clearInterval(avgDistance);
+        //   }, 500);
+        // }, 30);
         // setStoppingDistance(UmooveApi.API_getDistance())
-        setDailyStoppingDistance(DailyStoppingDistance + distance)
+        setDailyStoppingDistance(DailyStoppingDistance + distance);
         console.log(DailyStoppingDistance);
       }
     }
-
     useEffect(()=>{
       const toCenterlize = 
         setInterval(()=>{
@@ -56,8 +92,8 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
         return <>
           <div className="purpleDot" style={{ left: localStorage.getItem("posX") + "px" }}></div>
           <div className="bo">
-            <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
-          </div>
+           <div className="train-focus-sub-btn"> <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
+          </div></div>
         </>
         break;
       case 1:
@@ -66,8 +102,8 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
           <div className="back_center_Left"> <div className="text_box">Move the phone a bit to the left so the dot is in your center</div>
             <img  className="flip_img_left"src={arow} alt="img"/>
           </div>
-          <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
-        </>
+          <div className="train-focus-sub-btn"> <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
+       </div> </>
         break;
       case -1:
         return <>
@@ -75,8 +111,8 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
           <div className="back_center_Right"> <div className="text_box">Move the phone a bit to the right so the dot is in your center</div>
             <img  className="flip_img_right"src={arow} alt="img"/>
           </div>
-          <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
-        </>
+          <div className="train-focus-sub-btn">  <SabmitBtn name="stop" path={RoundNumber < 5 ? '/train-focus/StartFocus' : '/train-focus/result'} onclick={Round} />
+        </div></>
         break;
       default:
         break;

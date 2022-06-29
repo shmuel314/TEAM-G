@@ -4,7 +4,6 @@ import Nav from "../Nav";
 // import Popup from "../Popup/Popup"
 import { Route, Routes } from "react-router-dom";
 import CalibrateCam from "../../../pages/TrainFocus/CalibrateCam";
-// import TextArea from "../common/TextArea/Index";
 // import Context from "../../../context";
 
 import Results from "../../../pages/TrainFocus/TrainFocusResults";
@@ -28,13 +27,13 @@ function Main() {
         <Route path="teama">
           <Route index element={<>ghdsf</>} />
           <Route path="components-path" element={<>team's components</>} />
-        </Route>
+        </Route> 
 
         {/* Team B */}
-        <Route path="teams-path">
+        {/* <Route path="teams-path">
           <Route index element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
-        </Route>
+        </Route> */}
 
         {/* Team C */}
         <Route path="train_reading_level">
@@ -47,16 +46,16 @@ function Main() {
         </Route>
 
         {/* Team D */}
-        <Route path="teams-path">
+        {/* <Route path="teams-path">
           <Route index element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
-        </Route>
+        </Route> */}
 
         {/* Team E */}
-        <Route path="teams-path">
+        {/* <Route path="teams-path">
           <Route index element={<>team's components</>} />
           <Route path="components-path" element={<>team's components</>} />
-        </Route>
+        </Route> */}
 
         {/* Team F */}
         <Route path="/teamf">
@@ -83,6 +82,7 @@ function Main() {
 
         {/* Test */}
         <Route path="/test" element={<Test />} />
+        {/* <Route path="test/Dashboard" element={<Dashboard />} /> */}
       </Routes>
       <Nav />
       {/* <Popup /> */}

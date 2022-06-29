@@ -1,10 +1,12 @@
-import React, { createContext, useState } from 'react';
-import Main from './Main';
-import Login from './login';
+import React, { createContext, useContext, useState } from "react";
+import Main from "./Main";
+// import Login from "./login";
+import { dataContext } from "../../context/context";
+import fakeData from "../../context/fakeData";
 
-export const pageNameContext = createContext()
+export const pageNameContext = createContext();
 
-//group c- yoav & yehoshua 
+//group c- yoav & yehoshua
 
 export default function Layout() {
     const [pageName, setPageName] = useState("||||| default page name |||||");
