@@ -28,8 +28,14 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
       }
       else {
         const distance = UmooveApi.API_getDistance()
+        const avgDistance = setInterval(()=>{
+          setStoppingDistance(distance)
+          console.log(distance);
+          setTimeout(()=>{
+            clearInterval(avgDistance)
+          },500)
+        },30)
         // setStoppingDistance(UmooveApi.API_getDistance())
-        console.log(distance);
         setDailyStoppingDistance(DailyStoppingDistance + distance)
         console.log(DailyStoppingDistance);
       }
@@ -44,7 +50,7 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
     },[])
 
     localStorage.setItem("posX", 200); // ה200 הוא פייק. לקבל משתנה מאורית
-    
+
     switch (side) {
       case 0:
         return <>

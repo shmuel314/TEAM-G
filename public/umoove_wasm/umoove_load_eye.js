@@ -1,6 +1,6 @@
 var umooveHasStarted = false;
-var videoWidth = 640;
-var videoHeight = 480;
+var videoWidth = 960;
+var videoHeight = 720;
 
 function PointXY(x, y) {
   this.x = x;
@@ -255,8 +255,8 @@ var loadUmooveLibrary = () => {
         .getUserMedia({
           audio: false,
           video: {
-            height: { min: 420, max: 420 },
-            width: { min: 640, max: 640 },
+            height: { min: videoHeight, max: videoHeight },
+            width: { min: videoWidth, max: videoWidth },
             frameRate: { min: 15, ideal: 28, max: 30 },
             facingMode: "user",
           },

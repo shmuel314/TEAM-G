@@ -32,7 +32,7 @@ function Results() {
         </div>
         <h5 className="train-focus-text">Comfortable Reading</h5>
         <span className="train-focus-avg">
-          <b>{DailyStoppingDistance} cm</b>
+          <b>{DailyStoppingDistance.toFixed(1)} cm</b>
         </span>
       </div>
 

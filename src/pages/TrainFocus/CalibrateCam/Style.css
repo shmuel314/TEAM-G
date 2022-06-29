@@ -15,6 +15,7 @@
 
 
     .continueBtn{
+        /* background-color: #D35400; */
         width: 90%;
         height: 48px;
         position:fixed;
@@ -32,7 +33,6 @@
         justify-content: center;
         z-index: 1000;
         height: 200px;
-        /* border: 1px solid black; */
     }
 
     .calibrateCam{

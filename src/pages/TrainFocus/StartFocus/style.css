@@ -34,5 +34,20 @@
     margin-top: 70px;
     width: 30%;
 }
+
+.focus-video{
+    position: absolute;
+    height: 36%;
+    bottom: 39%;
+    z-index: 0;
+    width: 94%;
+    border-radius: 30px;
+}
+
+
+
+.footer-Start-classname{
+    z-index: 2;
+}
    
 }

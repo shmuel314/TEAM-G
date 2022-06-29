@@ -1,12 +1,13 @@
 import "./style.css";
 import FooterStart from "../../../components/common/FooterStart";
 import Frame from "../../../assets/img/logo/Frame.png";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect,useRef } from "react";
 import { pageNameContext } from "../../../components/layout/Layout.js";
 import UmooveApi from "../../../components/api/UmooveApi";
 import { useNavigate } from "react-router-dom";
 
 function StartFocus() {
+  const videoRef = useRef();
   const [mirror, setMirror] = useState("");
   const [focusIsOk, setFocusIsOk] = useState(false);
   const { RoundNumber, setRoundNumber } = useContext(pageNameContext);
@@ -20,7 +21,8 @@ function StartFocus() {
   useEffect(() => {
     UmooveApi.API_loadUmooveLibrary()
       .then((stream) => {
-        setMirror(stream);
+        videoRef.current.srcObject = stream;
+
         // console.log(mirror);
       })
       .catch((err) => {
@@ -47,7 +49,7 @@ function StartFocus() {
     }, 10);
   }
 
-  localStorage.setItem("posX", 200); // ה200 הוא פייק. לקבל משתנה מאורית
+  localStorage.setItem("posX", 150); // ה200 הוא פייק. לקבל משתנה מאורית
 
   return (
     <div>
@@ -60,12 +62,11 @@ function StartFocus() {
         <div className="anderDotText">
           <p>Focus on the {"\n"}dot above</p>
         </div>
-        <video width="320" height="240">
-          <source src={mirror} type="video/mp4"></source>
-        </video>
       </div>
+      <video ref={videoRef} autoPlay className="focus-video"/>
 
-      <FooterStart
+
+      <FooterStart className="footer-Start-classname"
         startFunction={startFunction}
         title={title}
         explanation={RoundNumber===1 ? explanation1 : explanation2}
