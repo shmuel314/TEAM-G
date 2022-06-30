@@ -1,25 +1,18 @@
 @media screen and (max-width:600px){
 
-
-
-    .localLook{
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-       position: relative;
-    }
     
     .purpleDotDot{
-        position: absolute;
+      position: relative;
         width: 18px;
         height: 18px;  
         border-radius: 50%;
         background: #7D56A5;
+        margin-top: 30px;
     }
 
 .arrowToDot{
-    position: absolute;
-    margin-top: 50px;
+  position: relative;
+    margin-top: 20px;
     transform: rotate(120deg);
     border: solid #7D56A5;
   border-width: 0 3px 3px 0;
@@ -31,14 +24,21 @@
    }
 
    .anderDotText{
-    position: absolute;
-    margin-top: 70px;
-    width: 30%;
+    position: relative;
+    width: 120px;
+   text-align: center;
+   }
+
+   .around-video{
+    width: 100%;
+   margin-top: 20px;
+    display: flex;
+    justify-content: center;
    }
 
    .focusVideo{
+   
        width: 90%;
-        margin: 38% 5% 0 5%;
         border-radius: 25px;
    }
 

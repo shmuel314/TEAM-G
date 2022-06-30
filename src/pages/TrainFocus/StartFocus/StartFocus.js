@@ -11,6 +11,7 @@ function StartFocus() {
   const videoRef = useRef();
   const [popup, setPopup] = useState(false);
   const cameraPosX = localStorage.getItem("cameraPosX");
+  const textCameraPosX = cameraPosX-49;
   const [mirror, setMirror] = useState("");
   const [focusIsOk, setFocusIsOk] = useState(false);
   const { RoundNumber, setRoundNumber, setShowHeader } =
@@ -66,7 +67,7 @@ useEffect(()=>{
   }
 
   return (
-    <div>
+    <div className="start-focus-page">
       {/* ------------------------------------------- popup!!*/}
       {popup === true ? (
         <div className={`overlay ${popup ? "" : "close"}`}>
@@ -86,14 +87,14 @@ useEffect(()=>{
         </div>
       ) : null}
       {/* ------------------------------------------- */}
-      <div className="localLook" style={{ left: cameraPosX + "px" }}>
-        <div className="purpleDotDot"></div>
-        <div className="arrowToDot"></div>
-        <div className="anderDotText">
-          <p>Focus on the {"\n"}dot above</p>
+      {/* <div className="localLook" style={{ left: cameraPosX + "px" }}> */}
+        <div className="purpleDotDot" style={{ left: cameraPosX + "px" }}></div>
+        <div className="arrowToDot" style={{ left: cameraPosX + "px" }}></div>
+        <div className="anderDotText" style={{ left: textCameraPosX + "px" }}>
+          Focus on the dot above
         </div>
-      </div>
-        <video className="focusVideo" ref={videoRef} autoPlay />
+      {/* </div> */}
+        <div className="around-video"><video className="focusVideo" ref={videoRef} autoPlay /></div>
       <FooterStart
         startFunction={startFunction}
         title={title}

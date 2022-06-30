@@ -8,9 +8,6 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
 
 
   function Exercise() {
-    // UmooveApi.API_loadUmooveLibrary().then(() => {
-    // }).catch((error) => { console.error(error) })
-    // UmooveApi.API_startUmoove()
     const navigate=useNavigate()
     const [side,setSide] = useState(0)
     const { RoundNumber, setDailyStoppingDistance, DailyStoppingDistance } = useContext(pageNameContext)
@@ -20,7 +17,6 @@ import SabmitBtn from '../../../components/common/SubmitBtn'
 
     function Round() {
       if (RoundNumber === 5) {
-        console.log("5555555555555555555555");
         const distance = UmooveApi.API_getDistance()
         setDailyStoppingDistance((DailyStoppingDistance + distance)/4)
         // setDailyStoppingDistance(DailyStoppingDistance / 4)

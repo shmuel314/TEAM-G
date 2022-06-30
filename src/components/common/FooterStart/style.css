@@ -7,22 +7,17 @@
        justify-content: center;
        
     }
-    .footer-start-box{
+    .footer-start-box {
         position: absolute;
         bottom: 0%;
-        left: 0%;
         width: 100%;
         height: 38%;
         z-index: 0;
-    box-sizing: border-box;
-    left: 0%;
-    background: #7D56A5;
-    border: 1.5px solid #252525;
-    border-radius: 40px 40px 0px 0px;
-    flex-wrap: nowrap;
+        background: #7D56A5;
+        border: 1.5px solid #252525;
+        border-radius: 40px 40px 0px 0px;
         display: flex;
-       justify-content: center;
-      
+        justify-content: center;
     }
     
     
@@ -48,10 +43,7 @@
     justify-content: center;
     align-items: center;
 }
-    .startOrengeBtn{
-        position: absolute;
-    z-index: 10;
-    box-sizing: border-box;
+.startOrengeBtn {
     border-radius: 50%;
     width: 78px;
     height: 78px;
@@ -60,8 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 15%;
-    }
+}
     
     
     .playTriangle{
@@ -84,7 +75,7 @@
         line-height: 18px;
         text-align: center;
         color: #FFFFFF;
-        top: 25%;
+        top: 20%;
     }
     
     .explanation {
