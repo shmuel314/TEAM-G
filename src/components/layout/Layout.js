@@ -10,6 +10,7 @@ export const pageNameContext = createContext();
 
 export default function Layout() {
     const [pageName, setPageName] = useState("||||| default page name |||||");
+    const [ShowHeader , setShowHeader] = useState(true)
     const [userLoginInfo,setUserLoginInfo] = useState([])
     const [RoundNumber, setRoundNumber] = useState(1)
     const [DailyStoppingDistance, setDailyStoppingDistance] = useState(0)
@@ -20,7 +21,7 @@ export default function Layout() {
 
     return (
         <div className='Layout'>
-            <pageNameContext.Provider value={{pageName, setPageName,RoundNumber, setRoundNumber,DailyStoppingDistance, setDailyStoppingDistance}}>
+            <pageNameContext.Provider value={{ShowHeader , setShowHeader, pageName, setPageName,RoundNumber, setRoundNumber,DailyStoppingDistance, setDailyStoppingDistance}}>
                 {/* <Login setUserLoginInfo={setUserLoginInfo}/> */}
                 <Main userLoginInfo={userLoginInfo}/>
                 {/* <Login setUserLoginInfo={setUserLoginInfo}/> */}

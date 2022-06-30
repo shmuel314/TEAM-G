@@ -15,7 +15,7 @@ function CalibrateCam(){
   // const dragItem = useRef()
   const [posX, setPosX] = useState(window.innerWidth/2-halfImgWidth);
   const navigate = useNavigate();
-
+ 
 // const drag = (e) => {
 //         setPosX(e.clientX-halfImgWidth);
 //   };
@@ -55,7 +55,7 @@ function CalibrateCam(){
   };
 
   const onClickBtn=()=>{
-    localStorage.setItem('posX', posX);
+    localStorage.setItem('cameraPosX', posX+46);
     console.log("send posX to DB. current posX="+posX)
      navigate('/train-focus/StartFocus');
     //userLogic.setCalibrateCam(mobileID, posX)

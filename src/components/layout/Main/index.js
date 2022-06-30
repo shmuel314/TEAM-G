@@ -21,7 +21,7 @@ function Main() {
   return (
     <>
       <Header />
-      content
+      {/* content */}
       <Routes>
         {/* Team A */}
         <Route path="teama">

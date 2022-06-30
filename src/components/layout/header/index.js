@@ -16,6 +16,8 @@ export default function Header() {
      console.log(pageNameContextLocal.pageName);
    
    return (
+      <>
+      {pageNameContextLocal.ShowHeader ? 
       <div className='header'>
          <div className='left'>
             <img src={nav} alt="navbar"></img>
@@ -28,6 +30,7 @@ export default function Header() {
          <div className='right'>
             <img src={photoPic} alt="User Name" />
          </div>
-      </div>
+      </div> : null}
+      </>
   );
 }
